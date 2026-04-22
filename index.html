@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Insights from Exec Students — Innovating Through Design Thinking</title>
+  <style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1C1915;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #F5F0E8;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+
+    .header {
+      padding: 60px 48px 36px;
+      max-width: 1496px;
+      margin: 0 auto;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .header-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      color: #A09890;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .header-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 50px;
+      font-weight: 700;
+      color: #F5F0E8;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+
+    .header-title span {
+      background: #FFE600;
+      color: #1A1A1A;
+      padding: 0 8px;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      padding-top: 6px;
+    }
+
+    .harvest-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #2A2520;
+      border: 1px solid #3A3530;
+      border-radius: 24px;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #A09890;
+      letter-spacing: 1px;
+    }
+
+    .harvest-badge .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #E8453C;
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .stat-pill {
+      background: #2A2520;
+      border: 1px solid #3A3530;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px;
+      color: #7A7068;
+    }
+
+    .stat-pill strong { color: #F5F0E8; }
+
+    /* ── FILTER BAR ── */
+
+    .filter-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #191613;
+      border-bottom: 1px solid #3A3530;
+      padding: 16px 48px;
+    }
+
+    .filter-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #4A4540;
+      text-transform: uppercase;
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #2A2520;
+      border: 1px solid #3A3530;
+      color: #7A7068;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      transition: border-color 0.12s, color 0.12s, background 0.12s;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .filter-pill:hover {
+      border-color: #6A6058;
+      color: #C0B8B0;
+    }
+
+    /* Cohort active */
+    .filter-pill[data-filter-group="cohort"].active {
+      background: #E8453C;
+      color: #fff;
+      border-color: #E8453C;
+    }
+
+    /* Type active */
+    .filter-pill[data-filter-group="type"][data-filter-value="quote"].active    { background: #5A5450; color: #fff; border-color: #5A5450; }
+    .filter-pill[data-filter-group="type"][data-filter-value="insight"].active  { background: #7A6800; color: #FFE600; border-color: #7A6800; }
+    .filter-pill[data-filter-group="type"][data-filter-value="question"].active { background: #E8453C; color: #fff; border-color: #E8453C; }
+    .filter-pill[data-filter-group="type"][data-filter-value="angle"].active    { background: #2C5F80; color: #fff; border-color: #2C5F80; }
+
+    /* Muscle active */
+    .filter-pill[data-filter-group="muscle"][data-filter-value="empathy"].active    { background: #C25B28; color: #fff; border-color: #C25B28; }
+    .filter-pill[data-filter-group="muscle"][data-filter-value="divergent"].active  { background: #D4903A; color: #fff; border-color: #D4903A; }
+    .filter-pill[data-filter-group="muscle"][data-filter-value="synthesis"].active  { background: #5B7B8E; color: #fff; border-color: #5B7B8E; }
+    .filter-pill[data-filter-group="muscle"][data-filter-value="experiment"].active { background: #4A7C59; color: #fff; border-color: #4A7C59; }
+    .filter-pill[data-filter-group="muscle"][data-filter-value="aesthetic"].active  { background: #7B5B8E; color: #fff; border-color: #7B5B8E; }
+
+    /* Muscle color dots inside pills */
+    .muscle-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Filter status row */
+    .filter-status {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 4px;
+      border-top: 1px solid #2A2520;
+      margin-top: 2px;
+    }
+
+    #filterCount {
+      font-size: 11px;
+      color: #4A4540;
+      letter-spacing: 0.5px;
+    }
+
+    #filterCount strong { color: #A09890; }
+
+    #clearFilters {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      background: none;
+      border: 1px solid #3A3530;
+      color: #7A7068;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 11px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: border-color 0.12s, color 0.12s;
+    }
+
+    #clearFilters:hover { border-color: #E8453C; color: #E8453C; }
+
+    /* ── MAIN CONTENT ── */
+
+    .content-area {
+      padding: 40px 48px 80px;
+      max-width: 1496px;
+      margin: 0 auto;
+    }
+
+    /* ── SECTION BLOCK ── */
+
+    .section-block {
+      margin-bottom: 60px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #3A3530;
+      padding-bottom: 16px;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #F5F0E8;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title span { background: #FFE600; color: #1A1A1A; padding: 0 6px; }
+    .section-icon { font-size: 18px; opacity: 0.65; }
+    .section-meta { font-size: 12px; color: #4A4540; }
+
+    /* ── GRID ── */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    /* ── CARD ── */
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: #FAF7F2;
+      transition: opacity 0.18s ease;
+    }
+
+    .card.card-hidden { opacity: 0; }
+
+    .card-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+
+    .card-meta {
+      padding: 20px 22px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+
+    /* Card type badge */
+    .card-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 12px;
+      padding: 3px 10px;
+      align-self: flex-start;
+    }
+
+    .type-quote    { background: #EDE9E2; color: #7A7068; }
+    .type-insight  { background: #FFF5B0; color: #7A6200; }
+    .type-question { background: #FDECEA; color: #8B2020; }
+    .type-angle    { background: #E2EBF0; color: #2C5F80; }
+
+    .person-info { display: flex; flex-direction: column; gap: 3px; }
+    .person-name { font-size: 15px; font-weight: 700; color: #1C1B19; letter-spacing: -0.2px; }
+    .person-cohort { font-size: 11px; color: #777777; letter-spacing: 0.3px; }
+
+    .angle-context {
+      font-size: 11px; font-weight: 700; color: #A09890;
+      letter-spacing: 1.5px; text-transform: uppercase;
+    }
+
+    .tags {
+      display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+    }
+
+    .tag {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.6px;
+      text-transform: uppercase; border-radius: 20px; padding: 4px 11px;
+      white-space: nowrap; color: #fff;
+    }
+
+    .tag-empathy   { background: #C25B28; }
+    .tag-divergent { background: #D4903A; }
+    .tag-synthesis { background: #5B7B8E; }
+    .tag-experiment{ background: #4A7C59; }
+    .tag-aesthetic { background: #7B5B8E; }
+
+    .tag-theme {
+      background: transparent; color: #777777; font-weight: 500;
+      font-size: 11px; letter-spacing: 0.2px; text-transform: none;
+      padding: 4px 0; border-radius: 0;
+    }
+
+    .tag-divider { width: 1px; height: 14px; background: #D4CDCA; flex-shrink: 0; }
+
+    .insight      { font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #FFE600; }
+    .insight-note { font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #D4903A; }
+    .question-note{ font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #E8453C; }
+    .angle-note   { font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #5B7B8E; }
+
+    /* ── EMPTY STATE ── */
+
+    #emptyState {
+      display: none;
+      text-align: center;
+      padding: 80px 48px;
+      color: #4A4540;
+    }
+
+    #emptyState p { font-size: 18px; margin-bottom: 20px; }
+
+    #emptyState button {
+      background: none; border: 1px solid #3A3530; color: #7A7068;
+      border-radius: 20px; padding: 8px 24px; font-size: 13px;
+      font-family: inherit; cursor: pointer;
+    }
+
+    #emptyState button:hover { border-color: #E8453C; color: #E8453C; }
+
+    /* ── FOOTER ── */
+
+    .footer {
+      border-top: 1px solid #3A3530;
+      padding: 24px 48px;
+      max-width: 1496px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-left  { font-size: 12px; color: #4A4540; letter-spacing: 0.3px; }
+    .footer-right { font-size: 12px; color: #4A4540; letter-spacing: 1px; }
+
+    /* ── PUBLISH BUTTON ── */
+    .card { position: relative; }
+    .publish-btn {
+      position: absolute;
+      bottom: 12px; right: 12px;
+      width: 30px; height: 30px;
+      background: rgba(26,26,26,0.8);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 2;
+    }
+    .card:hover .publish-btn { opacity: 1; }
+    .publish-btn:hover { background: rgba(255,230,0,0.15); border-color: #FFE600; }
+    .publish-btn svg { width: 13px; height: 13px; stroke: #F5F0E8; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ── PUBLISH MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.72);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: #1C1915;
+      border: 1px solid #3A3530;
+      border-radius: 12px;
+      width: 540px;
+      max-width: 92vw;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px; right: 18px;
+      background: none; border: none;
+      color: #5A5048; font-size: 22px;
+      cursor: pointer; line-height: 1;
+    }
+    .modal-close:hover { color: #F5F0E8; }
+    .modal-section-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 3px; color: #5A5048;
+      text-transform: uppercase; margin-bottom: 18px;
+    }
+    .modal-divider { height: 1px; background: #2A2520; margin: 24px 0; }
+    .modal-field { margin-bottom: 14px; }
+    .modal-field-label {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 2px; color: #7A7068;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .modal-field-value {
+      background: #241F1B;
+      border: 1px solid #2A2520;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 14px;
+      line-height: 1.65;
+      color: #D5D0C8;
+    }
+    .modal-field-value.is-quote {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      color: #F5F0E8;
+      font-size: 15px;
+    }
+    .modal-tags-row {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      background: #241F1B;
+      border: 1px solid #2A2520;
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    .modal-tag {
+      font-size: 11px; padding: 3px 9px;
+      border-radius: 20px;
+      background: #2A2520; color: #7A7068;
+    }
+    #modalThoughts {
+      width: 100%;
+      background: #241F1B;
+      border: 1px solid #2A2520;
+      border-radius: 6px;
+      padding: 12px 14px;
+      color: #F5F0E8;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 15px;
+      line-height: 1.65;
+      resize: vertical;
+      min-height: 100px;
+      outline: none;
+      box-sizing: border-box;
+    }
+    #modalThoughts:focus { border-color: #FFE600; }
+    #modalThoughts::placeholder { color: #3A3530; font-style: italic; }
+    .modal-copy-btn {
+      width: 100%; margin-top: 16px;
+      background: #FFE600; color: #1A1A1A;
+      border: none; border-radius: 6px;
+      padding: 13px; font-size: 12px;
+      font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer; transition: opacity 0.15s;
+    }
+    .modal-copy-btn:hover { opacity: 0.85; }
+    .modal-copy-btn.copied { background: #4A8; color: #fff; }
+    .modal-save-btn {
+      width: 100%; margin-top: 8px;
+      background: transparent; color: #7A7068;
+      border: 1px solid #3A3530; border-radius: 6px;
+      padding: 9px; font-size: 11px;
+      font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer; transition: border-color 0.15s, color 0.15s;
+    }
+    .modal-save-btn:hover { border-color: #6A6058; color: #C0B8B0; }
+    .modal-save-btn.saved { color: #4A8; border-color: #4A8; }
+
+    .modal-delete-btn {
+      width: 100%; margin-top: 8px;
+      background: transparent; color: #7A7068;
+      border: 1px solid #3A3530; border-radius: 6px;
+      padding: 9px; font-size: 11px;
+      font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer; transition: border-color 0.15s, color 0.15s;
+    }
+    .modal-delete-btn:hover { border-color: #E8453C; color: #E8453C; }
+
+    /* ── DIRECT QUOTE CARD VISUAL ── */
+    .card-quote-visual {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background: #252019;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-quote-visual::before {
+      content: '\201C';
+      position: absolute;
+      top: 4px; left: 18px;
+      font-family: Georgia, serif;
+      font-size: 130px;
+      line-height: 1;
+      color: rgba(255,230,0,0.13);
+      pointer-events: none;
+    }
+    .cqv-text {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: normal;
+      color: #F0EBE0;
+      line-height: 1.65;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Direct quote badge */
+    .type-direct { background: #E8F0E4; color: #375A2A; }
+
+    /* ── ADD CARD FAB ── */
+    .add-card-fab {
+      position: fixed;
+      bottom: 32px; right: 32px;
+      width: 50px; height: 50px;
+      background: #FFE600;
+      color: #1A1A1A;
+      border: none;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+      z-index: 90;
+      transition: transform 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+    }
+    .add-card-fab:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(0,0,0,0.55); }
+    .add-card-fab title-tooltip { display: none; }
+
+    /* ── CREATE CARD MODAL EXTRAS ── */
+    .modal textarea.cc-input {
+      width: 100%;
+      background: #241F1B;
+      border: 1px solid #2A2520;
+      border-radius: 6px;
+      padding: 12px 14px;
+      color: #F5F0E8;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 15px;
+      line-height: 1.65;
+      resize: vertical;
+      min-height: 80px;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .modal textarea.cc-input:focus { border-color: #FFE600; }
+    .modal textarea.cc-input::placeholder { color: #3A3530; font-style: italic; }
+
+    .modal input.cc-input,
+    .modal select.cc-input {
+      width: 100%;
+      background: #241F1B;
+      border: 1px solid #2A2520;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 14px;
+      color: #D5D0C8;
+      font-family: inherit;
+      outline: none;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .modal input.cc-input:focus,
+    .modal select.cc-input:focus { border-color: #FFE600; }
+    .modal input.cc-input::placeholder { color: #3A3530; }
+    .modal select.cc-input option { background: #241F1B; }
+
+    .cc-muscles-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .cc-muscle-pill {
+      padding: 5px 13px;
+      border-radius: 20px;
+      border: 1px solid #3A3530;
+      background: #2A2520;
+      color: #7A7068;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.12s;
+      font-family: inherit;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .cc-muscle-pill:hover { border-color: #6A6058; color: #C0B8B0; }
+    .cc-muscle-pill[data-muscle="empathy"].active    { background: #C25B28; color: #fff; border-color: #C25B28; }
+    .cc-muscle-pill[data-muscle="divergent"].active  { background: #D4903A; color: #fff; border-color: #D4903A; }
+    .cc-muscle-pill[data-muscle="synthesis"].active  { background: #5B7B8E; color: #fff; border-color: #5B7B8E; }
+    .cc-muscle-pill[data-muscle="experiment"].active { background: #4A7C59; color: #fff; border-color: #4A7C59; }
+    .cc-muscle-pill[data-muscle="aesthetic"].active  { background: #7B5B8E; color: #fff; border-color: #7B5B8E; }
+
+    .cc-required-note { font-size: 10px; color: #4A4540; margin-top: 4px; }
+
+    /* ── MOBILE FILTER TOGGLE ── */
+    .filter-toggle-row {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .filter-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #2A2520;
+      border: 1px solid #3A3530;
+      color: #A09890;
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color 0.12s, color 0.12s;
+    }
+    .filter-toggle-btn:hover { border-color: #6A6058; color: #C0B8B0; }
+    .filter-toggle-btn.has-active { border-color: #E8453C; color: #E8453C; }
+    .filter-toggle-chevron {
+      display: inline-block;
+      transition: transform 0.2s;
+      font-style: normal;
+    }
+    .filter-toggle-btn.open .filter-toggle-chevron { transform: rotate(180deg); }
+
+    .filter-rows-collapsible { }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .header { padding: 32px 20px 24px; }
+      .header-title { font-size: 32px; }
+      .header-meta { align-items: flex-start; }
+      .stats-row { justify-content: flex-start; }
+
+      .filter-bar { padding: 12px 16px; }
+      .filter-label { min-width: 80px; font-size: 9px; }
+      .filter-pill { font-size: 10px; padding: 4px 11px; }
+
+      .content-area { padding: 24px 16px 80px; }
+      .section-title { font-size: 20px; }
+
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+      .footer { padding: 20px 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .header-title { font-size: 26px; }
+
+      .filter-bar { padding: 10px 14px; }
+      .filter-toggle-row { display: flex; }
+      .filter-rows-collapsible { display: none; }
+      .filter-rows-collapsible.open { display: flex; flex-direction: column; gap: 10px; padding-top: 10px; border-top: 1px solid #2A2520; margin-top: 6px; }
+      .filter-status { padding-top: 8px; margin-top: 0; }
+
+      .grid { grid-template-columns: 1fr; gap: 20px; }
+
+      .card-quote-visual { aspect-ratio: 4/3; }
+      .card-image { aspect-ratio: 4/3; }
+      .cqv-text { font-size: 15px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <div>
+        <p class="header-label">Innovating Through Design Thinking with Jin Kang Møller</p>
+        <h1 class="header-title">Key Insights from <span>Exec Students</span></h1>
+      </div>
+      <div class="header-meta">
+        <div class="harvest-badge">
+          <span class="dot"></span>
+          HARVEST runs · 2026-03-28 &amp; 2026-03-29
+        </div>
+        <div class="stats-row">
+          <div class="stat-pill" id="stat-quotes"><strong>19</strong> student quotes</div>
+          <div class="stat-pill"><strong>5</strong> key insights</div>
+          <div class="stat-pill"><strong>4</strong> burning questions</div>
+          <div class="stat-pill"><strong>6</strong> content angles</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+
+      <!-- Mobile toggle row (only visible on small screens) -->
+      <div class="filter-toggle-row">
+        <button class="filter-toggle-btn" id="filterToggleBtn" onclick="toggleMobileFilters()">
+          Filters <i class="filter-toggle-chevron">&#x2304;</i>
+        </button>
+        <span id="filterCountMobile" class="filter-count-display" style="font-size:11px;color:#4A4540;letter-spacing:0.5px;"><strong>34</strong> cards</span>
+      </div>
+
+      <div class="filter-rows-collapsible" id="filterRowsCollapsible">
+
+      <div class="filter-row">
+        <span class="filter-label">Cohort</span>
+        <div class="filter-pills">
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="feb-2026">Feb 2026 · Fund.</button>
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="mar-2026">Mar 2026 · Adv.</button>
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="jul-2025">Jul 2025</button>
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="nov-2025">Nov 2025</button>
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="dec-2025-fund">Dec 2025 · Fund.</button>
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="dec-2025-adv">Dec 2025 · Adv. / Fac.</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-label">Card type</span>
+        <div class="filter-pills">
+          <button class="filter-pill" data-filter-group="type" data-filter-value="quote">&#x201C; My exec student says</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="insight">&#x2605; Key insight</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="question">? Burning question</button>
+          <button class="filter-pill" data-filter-group="type" data-filter-value="angle">&#x2192; Content angle</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-label">Design muscle</span>
+        <div class="filter-pills">
+          <button class="filter-pill" data-filter-group="muscle" data-filter-value="empathy"><span class="muscle-dot" style="background:#C25B28"></span>Empathy</button>
+          <button class="filter-pill" data-filter-group="muscle" data-filter-value="divergent"><span class="muscle-dot" style="background:#D4903A"></span>Divergent</button>
+          <button class="filter-pill" data-filter-group="muscle" data-filter-value="synthesis"><span class="muscle-dot" style="background:#5B7B8E"></span>Synthesis</button>
+          <button class="filter-pill" data-filter-group="muscle" data-filter-value="experiment"><span class="muscle-dot" style="background:#4A7C59"></span>Experiment</button>
+          <button class="filter-pill" data-filter-group="muscle" data-filter-value="aesthetic"><span class="muscle-dot" style="background:#7B5B8E"></span>Aesthetic</button>
+        </div>
+      </div>
+
+      <div class="filter-status">
+        <span id="filterCount"><strong>34</strong> cards</span>
+        <button id="clearFilters" onclick="clearAllFilters()">Clear filters &times;</button>
+      </div>
+
+      </div><!-- /filter-rows-collapsible -->
+
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content-area">
+
+    <!-- ═══ MANUAL / DIRECT CAPTURES ═══ -->
+    <div class="section-block" id="block-manual" style="display:none">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">&#x25C9;</span> <span>Direct Captures</span> — added manually</h2>
+        <span class="section-meta" id="block-manual-meta">0 cards</span>
+      </div>
+      <div class="grid" id="manual-cards-grid"></div>
+    </div>
+
+    <!-- ═══ KEY INSIGHTS ═══ -->
+    <div class="section-block" id="block-insights">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">&#x2605;</span> <span>Key Insights</span> — mentioned by multiple students</h2>
+        <span class="section-meta">5 cards · Jul 2025–Dec 2025</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="insight"
+          data-cohort="feb-2026 mar-2026 jul-2025 nov-2025 dec-2025-fund dec-2025-adv"
+          data-muscles="divergent empathy">
+          <img src="./images/key_insight_solutions.svg" alt="Key Insight — Jump to solutions" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-insight">&#x2605; Key Insight</span>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Instinct to Solve</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Premature Convergence</span>
+            </div>
+            <p class="insight-note">The most consistent shift across all cohorts. Named by Victor Ng (quality engineering), Wei Ling Chua (IRAS), Amilyn Chua, and many others — every background, same default pattern.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="insight"
+          data-cohort="feb-2026 mar-2026 jul-2025 nov-2025 dec-2025-fund"
+          data-muscles="synthesis empathy">
+          <img src="./images/key_insight_data.svg" alt="Key Insight — Data is not insight" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-insight">&#x2605; Key Insight</span>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Data vs Insight</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Story-Gathering</span>
+            </div>
+            <p class="insight-note">Multiple participants named the data–insight distinction as their biggest conceptual shift. Josephine Lee, TK Loh, and Brian Ng all articulated versions of it independently.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="insight"
+          data-cohort="feb-2026 jul-2025 nov-2025 dec-2025-fund"
+          data-muscles="empathy">
+          <img src="./images/key_insight_fluffy.svg" alt="Key Insight — The skeptic's journey" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-insight">&#x2605; Key Insight</span>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Skeptic to Believer</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">DT Credibility</span>
+            </div>
+            <p class="insight-note">A recurring pattern: professionals who arrived skeptical left with a specific changed view. Vanessa Chua (engineer), Rachael Sim, and Brian Ng all arrived with "fluffy" or "buzzword" as a working assumption — and each documented a specific reversal.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="insight"
+          data-cohort="feb-2026 jul-2025 nov-2025"
+          data-muscles="empathy">
+          <img src="./images/key_insight_life.svg" alt="Key Insight — DT bleeds into life" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-insight">&#x2605; Key Insight</span>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">DT Beyond Work</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Personal Transfer</span>
+            </div>
+            <p class="insight-note">Unprompted, multiple students applied DT outside their day jobs. Denise Ng (with her sons), Daphne Quek (redesigning court access), Danny Sunyoto (empathy as what makes us human), Pearl Lim (in coaching).</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="insight"
+          data-cohort="feb-2026 mar-2026 jul-2025 dec-2025-adv"
+          data-muscles="synthesis aesthetic">
+          <img src="./images/key_insight_storytelling.svg" alt="Key Insight — Storytelling as sense-making" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-insight">&#x2605; Key Insight</span>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Storytelling</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Sense-Making</span>
+            </div>
+            <p class="insight-note">Multiple students arrived thinking storytelling belonged at the end. The shift: it's how you bring the user's world into the room at any stage. Named by Ira Iskandar, Jiesi Huang (Facilitation Dec 2025), and Danny Sunyoto.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ═══ BURNING QUESTIONS ═══ -->
+    <div class="section-block" id="block-questions">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">?</span> <span>Burning Questions</span> — raised in student reflections</h2>
+        <span class="section-meta">4 cards · Nov 2025</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="question"
+          data-cohort="nov-2025"
+          data-muscles="empathy">
+          <img src="./images/question_ai.svg" alt="Burning Question — AI and HCD" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Aaron Tan</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">AI × HCD</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Future of Design</span>
+            </div>
+            <p class="question-note">Aaron came from a quality engineering background asking whether AI would make HCD obsolete. Eric Han (NUHS Corp, Dec 2025) answered it from the front lines of healthcare: he still believes HCD is the way forward.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="question"
+          data-cohort="nov-2025"
+          data-muscles="experiment">
+          <img src="./images/question_speed.svg" alt="Burning Question — Fast-paced projects" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Denise Ng</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025 · IRAS</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Real-World Constraints</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Pace vs Depth</span>
+            </div>
+            <p class="question-note">Denise raised three distinct questions — all pointing at the same real tension: DT feels time-intensive in an environment that isn't. This is the most common objection from practitioners who believe in the method but can't see the entry point.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="question"
+          data-cohort="nov-2025"
+          data-muscles="synthesis">
+          <img src="./images/question_enough.svg" alt="Burning Question — How much research is enough" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Denise Ng</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025 · IRAS</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Saturation</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Research Threshold</span>
+            </div>
+            <p class="question-note">The "how much is enough" question is one of the hardest to answer and the most honest to ask. It points at the absence of a clear signal — and is exactly what experienced practitioners build a feel for over time.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="question"
+          data-cohort="nov-2025"
+          data-muscles="experiment">
+          <img src="./images/question_bottomup.svg" alt="Burning Question — Bottom-up adoption" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Victor Ng</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Change Management</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Org Adoption</span>
+            </div>
+            <p class="question-note">Victor identified the structural challenge: without senior buy-in, a fresh DT practitioner is a lone voice. He named this as the single biggest barrier he'd face going back to work.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ═══ STUDENT QUOTES — Feb–Mar 2026 ═══ -->
+    <div class="section-block" id="block-2026">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">&#x201C;</span> <span>My exec student says</span> — Feb–Mar 2026</h2>
+        <span class="section-meta">7 cards · HARVEST 2026-03-28 + field notes</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="feb-2026"
+          data-muscles="empathy">
+          <img src="./images/visual_card.svg" alt="Kenneth Wong" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Kenneth Wong</span>
+              <span class="person-cohort">DT Fundamentals · Feb 2026 · Consultant</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Practitioner's Reversal</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Expert Bias</span>
+            </div>
+            <p class="insight">Years of practice had quietly shifted his approach to solution-first. DT reversed the sequence. The most articulate expression of the practitioner's trap from this cohort.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="feb-2026"
+          data-muscles="empathy aesthetic">
+          <img src="./images/visual_card_yvonne.svg" alt="Yvonne Tan" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Yvonne Tan</span>
+              <span class="person-cohort">DT Fundamentals · Feb 2026</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Embodied Practice</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Pain Absorption</span>
+            </div>
+            <p class="insight">Most original application idea in the cohort: a physical pain sponge on her desk as a daily reminder to absorb friction before users feel it.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="feb-2026"
+          data-muscles="empathy aesthetic">
+          <img src="./images/visual_card_adil.svg" alt="Adil MuhammadKamil" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Adil MuhammadKamil</span>
+              <span class="person-cohort">DT Fundamentals · Feb 2026 · L&D Specialist</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Design as Connection</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Before / After</span>
+            </div>
+            <p class="insight">Attended DT 6 years prior and left uninspired. Practitioner-led delivery transformed the experience. His reframe — design is about connection, not aesthetics — is a direct shift from form to function-for-people.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="mar-2026"
+          data-muscles="synthesis aesthetic">
+          <img src="./images/visual_card_zonghui.svg" alt="Lim Zong Hui" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Lim Zong Hui</span>
+              <span class="person-cohort">Advanced Applications · Mar 2026 · Returning Student</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Storytelling</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Courage in DT</span>
+            </div>
+            <p class="insight">Returning student from Sept 2025. Named courage as an unofficial but essential DT principle. Storytelling shift: the narrative beneath data is a synthesis skill, not just a communication one.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="feb-2026"
+          data-muscles="divergent">
+          <img src="./images/visual_card_adnan.svg" alt="Adnan" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Adnan</span>
+              <span class="person-cohort">DT Fundamentals · Feb 2026</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Premature Convergence</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Collective Synthesis</span>
+            </div>
+            <p class="insight">Named the rush to converge as driven by efficiency pressure, urgency, and habit. Synthesis produces limited insight solo — it needs people actively engaging each other's ideas.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="mar-2026"
+          data-muscles="experiment aesthetic">
+          <img src="./images/visual_card_julene_dale.svg" alt="Julene Dale" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Julene Dale</span>
+              <span class="person-cohort">Advanced Applications · Mar 2026</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Fluency Through Practice</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Skill Building</span>
+            </div>
+            <p class="insight">Captured outside the reflective paper. The practitioner's truth about skill-building: deliberate practice through resistance is how fluency comes.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="feb-2026"
+          data-muscles="empathy synthesis">
+          <img src="./images/visual_card_julene.svg" alt="Julene Chew" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Julene Chew</span>
+              <span class="person-cohort">DT Fundamentals · Feb 2026 · AI Consultancy Founder</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Data vs Insights</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Latent Knowledge</span>
+            </div>
+            <p class="insight">Captured the data-insight distinction precisely. Applying DT directly to launching an AI consultancy — using empathy and synthesis to help people navigate rapid change.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ═══ STUDENT QUOTES — 2025 Cohorts ═══ -->
+    <div class="section-block" id="block-2025">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">&#x201C;</span> <span>My exec student says</span> — 2025 Cohorts</h2>
+        <span class="section-meta">12 cards · HARVEST 2026-03-29 · Jul–Dec 2025</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="empathy aesthetic">
+          <img src="./images/q25_danny1.svg" alt="Danny Sunyoto — walked out inspired" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Danny Sunyoto</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Inspiration</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Emotional Shift</span>
+            </div>
+            <p class="insight">Consistently named storytelling and the energy of the room as his strongest memories. This quote captures the emotional charge that shifts belief about DT — not by argument, but by experience.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="dec-2025-adv"
+          data-muscles="empathy">
+          <img src="./images/q25_eric.svg" alt="Eric Han — way forward in AI" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Eric Han</span>
+              <span class="person-cohort">Facilitation · Dec 2025 · Senior Manager, NUHS Corp</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">AI × HCD</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Practitioner's Stance</span>
+            </div>
+            <p class="insight">From the Facilitation cohort. Eric isn't dismissing AI — he's positioning HCD as the necessary counterweight. A healthcare leader's claim, not an idealist's.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="empathy synthesis">
+          <img src="./images/q25_brian.svg" alt="Brian Ng — unlocked a whole new mindset" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Brian Ng</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Mindset Shift</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Skeptic Converted</span>
+            </div>
+            <p class="insight">Brian arrived with "vague idea + buzzword" as his working frame for DT. This transformation quote is the archetype of the executive DT convert.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="empathy divergent">
+          <img src="./images/q25_daphne.svg" alt="Daphne Quek — understanding people deeply" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Daphne Quek</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025 · Access to Justice, Judiciary</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Empathy-First</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Government Application</span>
+            </div>
+            <p class="insight">Applying DT at the Access to Justice office to redesign how elderly and first-time court users navigate the system. Her statement lands because the application is so specific — and so human.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="empathy synthesis">
+          <img src="./images/q25_vanessa.svg" alt="Vanessa Chua — design thinking changes the way I think" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Vanessa Chua</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025 · Infineon</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Engineer's Conversion</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Data vs Insight</span>
+            </div>
+            <p class="insight">An engineer's conversion: "cold hard numbers" vs "insight drawn from people." She named the before-state so precisely that the after-state became credible.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="dec-2025-fund"
+          data-muscles="synthesis">
+          <img src="./images/q25_josephine.svg" alt="Josephine Lee — insight is a new discovery" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Josephine Lee</span>
+              <span class="person-cohort">DT Fundamentals · Dec 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Data vs Insight</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Value-Added Inference</span>
+            </div>
+            <p class="insight">The sharpest single-phrase articulation of the data-insight distinction in the 2025 cohorts. Her full quote adds "a value-added inference of the data" — precise enough to be taught as-is.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="dec-2025-fund"
+          data-muscles="empathy">
+          <img src="./images/q25_jasmine.svg" alt="Jasmine Gomez — honouring people's lived experiences" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Jasmine Gomez</span>
+              <span class="person-cohort">DT Fundamentals · Dec 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Reframe from Aesthetics</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Lived Experience</span>
+            </div>
+            <p class="insight">Arrived with "design = aesthetics" as a working assumption. The shift to "design = honouring people's lived experiences" is a complete reframe of the word itself — not just a new skill, but a new lens.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="dec-2025-adv"
+          data-muscles="synthesis aesthetic">
+          <img src="./images/q25_ira.svg" alt="Ira Iskandar — tool for sense-making" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Ira Iskandar</span>
+              <span class="person-cohort">Facilitation · Dec 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Storytelling as Sense-Making</span>
+            </div>
+            <p class="insight">Ira's shift: storytelling is not a finishing move — it's how you bring the user's reality into the room at every stage. A synthesis skill dressed as a communication skill.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="nov-2025"
+          data-muscles="experiment synthesis">
+          <img src="./images/q25_aaron.svg" alt="Aaron Tan — quality of process" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Aaron Tan</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Process Quality</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">HCD vs AI</span>
+            </div>
+            <p class="insight">Arrived from a quality engineering background with a burning question: "How does AI complement HCD?" This quote takes on extra weight from that context — an argument for why process quality matters in an AI world.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="nov-2025"
+          data-muscles="empathy">
+          <img src="./images/q25_denise.svg" alt="Denise Ng — apply DT with sons" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Denise Ng</span>
+              <span class="person-cohort">DT Fundamentals · Nov 2025 · IRAS</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">DT Beyond Work</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Unexpected Transfer</span>
+            </div>
+            <p class="insight">The most unexpected application in the 2025 cohorts. A tax officer deciding to use empathy mapping at the dinner table — unprompted, unsolicited. Which is what makes it real.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="divergent empathy">
+          <img src="./images/q25_danny2.svg" alt="Danny Sunyoto — team sport" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Danny Sunyoto</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Team Dynamics</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">In-Person vs Online</span>
+            </div>
+            <p class="insight">Said in direct contrast to his online DT experience. The in-person dynamic is not incidental — it is the mechanism. The energy of a room doing synthesis together is categorically different from doing it alone on a screen.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2025"
+          data-muscles="empathy divergent">
+          <img src="./images/q25_amilyn.svg" alt="Amilyn Chua — shifting perspectives" class="card-image">
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Amilyn Chua</span>
+              <span class="person-cohort">DT Fundamentals · Jul 2025</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Perspective Shift</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Understand Phase</span>
+            </div>
+            <p class="insight">Named "planning more deeply" as her key application — realising that the Understand phase is the work, not the preamble.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ═══ CONTENT ANGLES ═══ -->
+    <div class="section-block" id="block-angles">
+      <div class="section-header">
+        <h2 class="section-title">LinkedIn <span>Content Angles</span></h2>
+        <span class="section-meta">6 cards · HARVEST 2026-03-29</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 jul-2025 nov-2025 dec-2025-fund"
+          data-muscles="empathy">
+          <img src="./images/angle1.svg" alt="Content Angle 01 — Perception" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">01 — PERCEPTION</p>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Skeptic-to-Believer</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">DT Credibility</span>
+            </div>
+            <p class="angle-note">Build around: Vanessa Chua, Brian Ng, Rachael Sim. The "fluffy" objection is the opening that every sceptical executive holds — and the one that unlocks the most.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 mar-2026 jul-2025 nov-2025 dec-2025-fund dec-2025-adv"
+          data-muscles="empathy synthesis">
+          <img src="./images/angle2.svg" alt="Content Angle 02 — Empathy" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">02 — EMPATHY</p>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">User Interviews</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Stories vs Data</span>
+            </div>
+            <p class="angle-note">Build around: Josephine Lee, TK Loh, Ira Iskandar. The shift from questions-as-data to questions-as-story is the practitioner's turning point.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 mar-2026 nov-2025 dec-2025-adv"
+          data-muscles="empathy">
+          <img src="./images/angle3.svg" alt="Content Angle 03 — AI × HCD" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">03 — AI × HCD</p>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">AI × HCD</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Empathy as Defence</span>
+            </div>
+            <p class="angle-note">Build around: Eric Han (NUHS Corp), Aaron Tan's burning question. DT not as AI's victim, but as its answer.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 jul-2025 nov-2025 dec-2025-fund"
+          data-muscles="divergent experiment">
+          <img src="./images/angle4.svg" alt="Content Angle 04 — Solutions" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">04 — SOLUTIONS</p>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Premature Convergence</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Instinct to Solve</span>
+            </div>
+            <p class="angle-note">Build around: Victor Ng, Wei Ling Chua, Amilyn Chua. The instinct to solve is universal — and it's what DT directly trains out.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 jul-2025 nov-2025"
+          data-muscles="empathy">
+          <img src="./images/angle5.svg" alt="Content Angle 05 — Empathy (Personal)" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">05 — EMPATHY</p>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">DT Beyond Work</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Personal Transfer</span>
+            </div>
+            <p class="angle-note">Build around: Denise Ng (with her sons), Daphne Quek's Access to Justice story. The unexpected personal application is the most emotionally resonant angle.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="angle"
+          data-cohort="feb-2026 mar-2026 jul-2025 dec-2025-adv"
+          data-muscles="synthesis aesthetic">
+          <img src="./images/angle6.svg" alt="Content Angle 06 — Storytelling" class="card-image">
+          <div class="card-meta">
+            <p class="angle-context">06 — STORYTELLING</p>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Sense-Making</span>
+              <span class="tag tag-theme">·</span>
+              <span class="tag tag-theme">Not Just Presenting</span>
+            </div>
+            <p class="angle-note">Build around: Ira Iskandar, Jiesi Huang, Lim Zong Hui, Danny Sunyoto. Reframes storytelling from a finishing skill to a process tool used throughout.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div id="emptyState">
+      <p>No cards match the selected filters.</p>
+      <button onclick="clearAllFilters()">Clear all filters</button>
+    </div>
+
+  </div>
+
+  <!-- ADD CARD FAB -->
+  <button class="add-card-fab" id="addCardFab" title="Add a manual card">+</button>
+
+  <!-- CREATE CARD MODAL -->
+  <div class="modal-overlay" id="createCardModal">
+    <div class="modal">
+      <button class="modal-close" id="createCardClose">×</button>
+      <div class="modal-section-label">Add a Direct Quote Card</div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Quote <span style="color:#E8453C">*</span></div>
+        <textarea id="ccQuote" class="cc-input" rows="3" placeholder="The direct quote or key statement…"></textarea>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Person name</div>
+        <input id="ccName" class="cc-input" type="text" placeholder="Full name">
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Cohort / Context</div>
+        <input id="ccCohortLabel" class="cc-input" type="text" placeholder="e.g. Advanced Applications · Mar 2026">
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Cohort filter</div>
+        <select id="ccCohortFilter" class="cc-input">
+          <option value="">— no cohort filter —</option>
+          <option value="mar-2026">Mar 2026 · Adv.</option>
+          <option value="feb-2026">Feb 2026 · Fund.</option>
+          <option value="dec-2025-adv">Dec 2025 · Adv. / Fac.</option>
+          <option value="dec-2025-fund">Dec 2025 · Fund.</option>
+          <option value="nov-2025">Nov 2025</option>
+          <option value="jul-2025">Jul 2025</option>
+        </select>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Design muscles</div>
+        <div class="cc-muscles-row">
+          <button class="cc-muscle-pill" data-muscle="empathy"><span class="muscle-dot" style="background:#C25B28"></span>Empathy</button>
+          <button class="cc-muscle-pill" data-muscle="divergent"><span class="muscle-dot" style="background:#D4903A"></span>Divergent</button>
+          <button class="cc-muscle-pill" data-muscle="synthesis"><span class="muscle-dot" style="background:#5B7B8E"></span>Synthesis</button>
+          <button class="cc-muscle-pill" data-muscle="experiment"><span class="muscle-dot" style="background:#4A7C59"></span>Experiment</button>
+          <button class="cc-muscle-pill" data-muscle="aesthetic"><span class="muscle-dot" style="background:#7B5B8E"></span>Aesthetic</button>
+        </div>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Context / Note</div>
+        <textarea id="ccContext" class="cc-input" rows="2" placeholder="Why this quote matters, where it came from…"></textarea>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Theme tags <span style="color:#4A4540;font-weight:400;letter-spacing:0">(comma-separated)</span></div>
+        <input id="ccThemes" class="cc-input" type="text" placeholder="Fluency Through Practice, Skill Building">
+      </div>
+
+      <button class="modal-copy-btn" id="createCardSaveBtn">Add card to dashboard</button>
+    </div>
+  </div>
+
+  <!-- PUBLISH MODAL -->
+  <div class="modal-overlay" id="publishModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">×</button>
+
+      <div class="modal-section-label">From the Reflection</div>
+
+      <div class="modal-field" id="mf-quote">
+        <div class="modal-field-label" id="ml-quote">Quote</div>
+        <div class="modal-field-value is-quote" id="mv-quote"></div>
+      </div>
+
+      <div class="modal-field" id="mf-person">
+        <div class="modal-field-label">Person</div>
+        <div class="modal-field-value" id="mv-person"></div>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-field-label">Design Muscle · Themes</div>
+        <div class="modal-tags-row" id="mv-tags"></div>
+      </div>
+
+      <div class="modal-field" id="mf-context">
+        <div class="modal-field-label" id="ml-context">Context</div>
+        <div class="modal-field-value" id="mv-context"></div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section-label">My Thoughts</div>
+      <textarea id="modalThoughts" placeholder="Add 2–3 sentences — what this reminds you of, a story it surfaces, what you'd say to a skeptic…"></textarea>
+
+      <button class="modal-copy-btn" id="modalCopyBtn">Copy all to clipboard</button>
+      <button class="modal-save-btn" id="modalSaveBtn">Save thoughts</button>
+      <button class="modal-delete-btn" id="modalDeleteBtn" style="display:none">Remove this card</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">Innovating Through Design Thinking with Jin Kang Møller · HARVEST 2026-03-28 &amp; 2026-03-29</div>
+    <div class="footer-right">@JINKANGMOLLER</div>
+  </footer>
+
+  <script>
+    const filterState = { cohort: new Set(), type: new Set(), muscle: new Set() };
+
+    function toggleFilter(pill) {
+      const group = pill.dataset.filterGroup;
+      const value = pill.dataset.filterValue;
+      if (filterState[group].has(value)) {
+        filterState[group].delete(value);
+        pill.classList.remove('active');
+      } else {
+        filterState[group].add(value);
+        pill.classList.add('active');
+      }
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const cards = document.querySelectorAll('[data-type]');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cohorts = (card.dataset.cohort || '').split(' ').filter(Boolean);
+        const type    = card.dataset.type || '';
+        const muscles = (card.dataset.muscles || '').split(' ').filter(Boolean);
+
+        let show = true;
+        if (filterState.cohort.size > 0) show = show && cohorts.some(c => filterState.cohort.has(c));
+        if (filterState.type.size   > 0) show = show && filterState.type.has(type);
+        if (filterState.muscle.size > 0) show = show && muscles.some(m => filterState.muscle.has(m));
+
+        if (show) {
+          card.style.display = '';
+          requestAnimationFrame(() => requestAnimationFrame(() => card.classList.remove('card-hidden')));
+          visibleCount++;
+        } else {
+          card.classList.add('card-hidden');
+          setTimeout(() => { if (card.classList.contains('card-hidden')) card.style.display = 'none'; }, 200);
+        }
+      });
+
+      // Section visibility
+      document.querySelectorAll('.section-block').forEach(block => {
+        const anyVisible = Array.from(block.querySelectorAll('[data-type]')).some(c => c.style.display !== 'none');
+        block.style.display = anyVisible ? '' : 'none';
+      });
+
+      // Count
+      const total = cards.length;
+      const isFiltered = filterState.cohort.size > 0 || filterState.type.size > 0 || filterState.muscle.size > 0;
+      const countHTML = isFiltered
+        ? `<strong>${visibleCount}</strong> of ${total} cards`
+        : `<strong>${total}</strong> cards`;
+      document.getElementById('filterCount').innerHTML = countHTML;
+      const mob = document.getElementById('filterCountMobile');
+      if (mob) mob.innerHTML = countHTML;
+
+      // Update mobile toggle button active state
+      const toggleBtn = document.getElementById('filterToggleBtn');
+      if (toggleBtn) toggleBtn.classList.toggle('has-active', isFiltered);
+
+      // Clear button
+      document.getElementById('clearFilters').style.display = isFiltered ? 'inline-flex' : 'none';
+
+      // Empty state
+      document.getElementById('emptyState').style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    function toggleMobileFilters() {
+      const panel = document.getElementById('filterRowsCollapsible');
+      const btn = document.getElementById('filterToggleBtn');
+      const open = panel.classList.toggle('open');
+      btn.classList.toggle('open', open);
+    }
+
+    function clearAllFilters() {
+      ['cohort', 'type', 'muscle'].forEach(g => filterState[g].clear());
+      document.querySelectorAll('.filter-pill.active').forEach(p => p.classList.remove('active'));
+      applyFilters();
+    }
+
+    document.querySelectorAll('.filter-pill').forEach(pill => {
+      pill.addEventListener('click', () => toggleFilter(pill));
+    });
+
+    // ── PUBLISH MODAL ──────────────────────────────────────────────────────────
+    // Verbatim quote/question text pulled from source SVG cards.
+    // DO NOT modify without re-reading the source SVG files.
+    const CARD_QUOTES = {
+      './images/visual_card.svg':
+        'DT will have me work in the reverse from now on — to understand as best as possible who I\'m designing for in the first place.',
+      './images/visual_card_yvonne.svg':
+        'I would like to put a \'pain sponge\' on my future work desk to remind myself to \'absorb the pain\' so users don\'t have to.',
+      './images/visual_card_adil.svg':
+        'I came to the session with the intention to broaden the way I think about design — beyond graphics and aesthetics. I left understanding that Design is about experiences that connect.',
+      './images/visual_card_julene_dale.svg':
+        'Slow is smooth, smooth is fast. Practicing design skills brings more fluency even through it sometimes feels like swimming through treacle.',
+      './images/visual_card_adnan.svg':
+        'Too often we tend to rush into the converging process, whether it is to meet urgent demands or to be more \'efficient\' in our task. Diverging is equally if not more important.',
+      './images/visual_card_julene.svg':
+        'Data are not insights. There may also be a gap between what customers say and what they do — both the reporting and the behaviours are not insights, but insights could be inferred from them.',
+      './images/visual_card_zonghui.svg':
+        'Storytelling suddenly doesn\'t feel so daunting anymore. If we truly want to arrive at a \'loveable\' solution, we should not be afraid to revisit the question we are asking.',
+      './images/q25_danny1.svg':    'I walked in to learn, but I walked out inspired.',
+      './images/q25_eric.svg':      'I still believe Human Centred Design is the way forward in the world of AI.',
+      './images/q25_brian.svg':     'I feel that I have unlocked a whole new mindset.',
+      './images/q25_daphne.svg':    'It\'s really about understanding people deeply — before jumping to solutions.',
+      './images/q25_vanessa.svg':   'Cold hard numbers felt more reliable than insight. Design thinking changes the way I think.',
+      './images/q25_josephine.svg': 'Data is factual. Insight is a new discovery.',
+      './images/q25_jasmine.svg':   'The entire process is rooted in honouring people\'s lived experiences.',
+      './images/q25_ira.svg':       'I see it now as a tool for sense-making — it helps me connect empathy, insights, and intent.',
+      './images/q25_aaron.svg':     'The quality of a product relates to the quality of the process.',
+      './images/q25_denise.svg':    'I will apply design thinking when talking to my sons. Try to understand their problems before jumping to solutions.',
+      './images/q25_danny2.svg':    'Design thinking is a team sport. It is very different from the online DT experience.',
+      './images/q25_amilyn.svg':    'The essence of design thinking is shifting perspectives before diving into solutions.',
+      './images/question_ai.svg':       'How does AI complement HCD? Will HCD become obsolete?',
+      './images/question_speed.svg':    'How can design thinking be applied in a fast-paced project where time is not on your side?',
+      './images/question_enough.svg':   'How do you know when you\'ve researched enough and it\'s time to move forward?',
+      './images/question_bottomup.svg': 'Are there known cases of organisations adopting design thinking through a bottoms-up approach?'
+    };
+
+    const QUOTE_LABELS  = { quote: 'Quote', question: 'Question', insight: 'Key Insight', angle: 'Content Angle' };
+    const CONTEXT_LABELS = { quote: 'Context', question: 'Context', insight: 'Notes', angle: 'Angle Notes' };
+
+    function openPublishModal(card) {
+      const type = card.dataset.type || 'quote';
+      const directQuote = card.dataset.quote || '';
+      const img  = card.querySelector('img');
+      const src  = img ? img.getAttribute('src') : '';
+      const quote = directQuote || CARD_QUOTES[src] || '';
+
+      // Show/hide delete button for manual cards
+      const manualId = card.dataset.manualId || '';
+      const deleteBtn = document.getElementById('modalDeleteBtn');
+      deleteBtn.style.display = manualId ? '' : 'none';
+      deleteBtn.dataset.manualId = manualId;
+
+      const personName   = card.querySelector('.person-name')?.textContent.trim()   || '';
+      const personCohort = card.querySelector('.person-cohort')?.textContent.trim() || '';
+      const contextText  = card.querySelector('.insight, .insight-note, .question-note, .angle-note')?.textContent.trim() || '';
+      const tags = [...card.querySelectorAll('.tag')]
+        .map(t => t.textContent.trim()).filter(t => t && t !== '·');
+
+      // Labels
+      document.getElementById('ml-quote').textContent   = QUOTE_LABELS[type]   || 'Content';
+      document.getElementById('ml-context').textContent = CONTEXT_LABELS[type] || 'Notes';
+
+      // Quote / main content
+      const mvQuote = document.getElementById('mv-quote');
+      if (quote) {
+        mvQuote.textContent = quote;
+        document.getElementById('mf-quote').style.display = '';
+      } else {
+        mvQuote.textContent = contextText;
+        document.getElementById('mf-quote').style.display = '';
+        document.getElementById('mf-context').style.display = 'none';
+      }
+
+      // Context (only show if we also have a quote)
+      if (quote && contextText) {
+        document.getElementById('mv-context').textContent = contextText;
+        document.getElementById('mf-context').style.display = '';
+      } else if (!quote) {
+        document.getElementById('mf-context').style.display = 'none';
+      }
+
+      // Person
+      const mfPerson = document.getElementById('mf-person');
+      if (personName) {
+        document.getElementById('mv-person').textContent = personCohort ? `${personName} — ${personCohort}` : personName;
+        mfPerson.style.display = '';
+      } else {
+        mfPerson.style.display = 'none';
+      }
+
+      // Tags
+      document.getElementById('mv-tags').innerHTML = tags.map(t => `<span class="modal-tag">${t}</span>`).join('');
+
+      // Load saved thoughts for this card
+      const savedKey = 'thoughts:' + (quote || contextText);
+      document.getElementById('modalThoughts').value = localStorage.getItem(savedKey) || '';
+      document.getElementById('publishModal').dataset.savedKey = savedKey;
+      const saveBtn = document.getElementById('modalSaveBtn');
+      saveBtn.textContent = 'Save thoughts';
+      saveBtn.classList.remove('saved');
+
+      document.getElementById('publishModal').classList.add('open');
+    }
+
+    function copyModalContent() {
+      const quoteLabel   = document.getElementById('ml-quote').textContent;
+      const quoteText    = document.getElementById('mv-quote').textContent;
+      const personText   = document.getElementById('mv-person').textContent;
+      const contextText  = document.getElementById('mv-context').textContent;
+      const mfPerson     = document.getElementById('mf-person');
+      const mfContext    = document.getElementById('mf-context');
+      const tags         = [...document.querySelectorAll('#mv-tags .modal-tag')].map(t => t.textContent).join(' · ');
+      const thoughts     = document.getElementById('modalThoughts').value.trim();
+
+      let brief = `FROM THE REFLECTION\n──────────────────\n`;
+      brief += `${quoteLabel.toUpperCase()}\n"${quoteText}"\n`;
+      if (mfPerson.style.display !== 'none' && personText) brief += `\nPERSON\n${personText}\n`;
+      if (tags) brief += `\nDESIGN MUSCLE · THEMES\n${tags}\n`;
+      if (mfContext.style.display !== 'none' && contextText) brief += `\nCONTEXT\n${contextText}\n`;
+      if (thoughts) brief += `\n──────────────────\nMY THOUGHTS\n──────────────────\n${thoughts}`;
+
+      navigator.clipboard.writeText(brief).then(() => {
+        const btn = document.getElementById('modalCopyBtn');
+        btn.textContent = 'Copied ✓';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy all to clipboard'; btn.classList.remove('copied'); }, 2000);
+      });
+    }
+
+    // Inject publish button on a card
+    function addPublishBtn(card) {
+      const btn = document.createElement('button');
+      btn.className = 'publish-btn';
+      btn.title = 'Draft content';
+      btn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>`;
+      btn.addEventListener('click', e => { e.stopPropagation(); openPublishModal(card); });
+      card.appendChild(btn);
+    }
+    document.querySelectorAll('.card').forEach(card => addPublishBtn(card));
+
+    document.getElementById('modalClose').addEventListener('click', () => {
+      document.getElementById('publishModal').classList.remove('open');
+    });
+    document.getElementById('publishModal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) document.getElementById('publishModal').classList.remove('open');
+    });
+    document.getElementById('modalCopyBtn').addEventListener('click', copyModalContent);
+
+    document.getElementById('modalSaveBtn').addEventListener('click', () => {
+      const thoughts = document.getElementById('modalThoughts').value;
+      const key = document.getElementById('publishModal').dataset.savedKey;
+      if (key) localStorage.setItem(key, thoughts);
+      const btn = document.getElementById('modalSaveBtn');
+      btn.textContent = 'Saved ✓';
+      btn.classList.add('saved');
+      setTimeout(() => { btn.textContent = 'Save thoughts'; btn.classList.remove('saved'); }, 2000);
+    });
+
+    document.getElementById('modalDeleteBtn').addEventListener('click', () => {
+      const id = document.getElementById('modalDeleteBtn').dataset.manualId;
+      if (id && confirm('Remove this card from the dashboard?')) {
+        deleteManualCard(id);
+        document.getElementById('publishModal').classList.remove('open');
+      }
+    });
+
+    // ── MANUAL CARD FEATURE ───────────────────────────────────────────────────
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    }
+    function capitalize(str) { return str.charAt(0).toUpperCase() + str.slice(1); }
+
+    function buildManualCard(data) {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.dataset.type    = 'quote';
+      card.dataset.cohort  = data.cohortFilter || '';
+      card.dataset.muscles = (data.muscles || []).join(' ');
+      card.dataset.quote   = data.quote;
+      card.dataset.manualId = data.id;
+
+      const muscles = data.muscles || [];
+      const themes  = (data.themes || []).filter(Boolean);
+
+      const muscleTags = muscles.map(m =>
+        `<span class="tag tag-${m}">${capitalize(m)}</span>`).join('');
+      const themeTags = themes.length
+        ? `<span class="tag-divider"></span>` + themes.map((t, i) =>
+            (i > 0 ? `<span class="tag tag-theme">·</span>` : '') +
+            `<span class="tag tag-theme">${escapeHtml(t)}</span>`).join('')
+        : '';
+
+      card.innerHTML = `
+        <div class="card-quote-visual">
+          <p class="cqv-text">${escapeHtml(data.quote)}</p>
+        </div>
+        <div class="card-meta">
+          <span class="card-type type-direct">&#x25C9; Direct Quote</span>
+          ${data.name ? `<div class="person-info">
+            <span class="person-name">${escapeHtml(data.name)}</span>
+            ${data.cohortLabel ? `<span class="person-cohort">${escapeHtml(data.cohortLabel)}</span>` : ''}
+          </div>` : ''}
+          ${(muscleTags || themeTags) ? `<div class="tags">${muscleTags}${themeTags}</div>` : ''}
+          ${data.context ? `<p class="insight">${escapeHtml(data.context)}</p>` : ''}
+        </div>`;
+
+      addPublishBtn(card);
+      return card;
+    }
+
+    function getManualCards() {
+      try { return JSON.parse(localStorage.getItem('manual-cards') || '[]'); }
+      catch(e) { return []; }
+    }
+
+    function saveManualCardsList(cards) {
+      localStorage.setItem('manual-cards', JSON.stringify(cards));
+    }
+
+    function loadManualCards() {
+      const cards = getManualCards();
+      const grid  = document.getElementById('manual-cards-grid');
+      const block = document.getElementById('block-manual');
+      const meta  = document.getElementById('block-manual-meta');
+      grid.innerHTML = '';
+      cards.forEach(data => grid.appendChild(buildManualCard(data)));
+      const count = cards.length;
+      block.style.display = count > 0 ? '' : 'none';
+      meta.textContent = `${count} card${count !== 1 ? 's' : ''}`;
+      // Update header stat pill to reflect manual cards added to quote count
+      const baseQuotes = 19;
+      const statEl = document.getElementById('stat-quotes');
+      if (statEl) statEl.innerHTML = `<strong>${baseQuotes + count}</strong> student quotes`;
+      applyFilters();
+    }
+
+    function deleteManualCard(id) {
+      saveManualCardsList(getManualCards().filter(c => c.id !== id));
+      loadManualCards();
+    }
+
+    // Create card modal wiring
+    const createModal = document.getElementById('createCardModal');
+    const activeMuscles = new Set();
+
+    document.getElementById('addCardFab').addEventListener('click', () => {
+      document.getElementById('ccQuote').value = '';
+      document.getElementById('ccName').value = '';
+      document.getElementById('ccCohortLabel').value = '';
+      document.getElementById('ccCohortFilter').value = '';
+      document.getElementById('ccContext').value = '';
+      document.getElementById('ccThemes').value = '';
+      activeMuscles.clear();
+      document.querySelectorAll('.cc-muscle-pill').forEach(p => p.classList.remove('active'));
+      createModal.classList.add('open');
+    });
+
+    document.getElementById('createCardClose').addEventListener('click', () => {
+      createModal.classList.remove('open');
+    });
+    createModal.addEventListener('click', e => {
+      if (e.target === e.currentTarget) createModal.classList.remove('open');
+    });
+
+    document.querySelectorAll('.cc-muscle-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        const m = pill.dataset.muscle;
+        if (activeMuscles.has(m)) { activeMuscles.delete(m); pill.classList.remove('active'); }
+        else { activeMuscles.add(m); pill.classList.add('active'); }
+      });
+    });
+
+    document.getElementById('createCardSaveBtn').addEventListener('click', () => {
+      const quote = document.getElementById('ccQuote').value.trim();
+      if (!quote) { document.getElementById('ccQuote').focus(); return; }
+
+      const data = {
+        id: 'manual-' + Date.now(),
+        quote,
+        name:         document.getElementById('ccName').value.trim(),
+        cohortLabel:  document.getElementById('ccCohortLabel').value.trim(),
+        cohortFilter: document.getElementById('ccCohortFilter').value,
+        muscles:      [...activeMuscles],
+        context:      document.getElementById('ccContext').value.trim(),
+        themes:       document.getElementById('ccThemes').value
+                        .split(',').map(t => t.trim()).filter(Boolean)
+      };
+
+      const existing = getManualCards();
+      existing.unshift(data);
+      saveManualCardsList(existing);
+      loadManualCards();
+      createModal.classList.remove('open');
+    });
+
+    // Initialise
+    loadManualCards();
+
+  </script>
+
+</body>
+</html>

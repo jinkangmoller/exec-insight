@@ -1,0 +1,17 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+  <text x="80" y="106" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">KEY INSIGHT</text>
+  <rect x="80" y="114" width="100" height="2.5" fill="#E8453C"/>
+  <!-- Star icon -->
+  <polygon points="80,158 90,186 120,187 96,205 105,234 80,217 55,234 64,205 40,187 70,186" fill="#C0BAB0"/>
+  <text x="80" y="296" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#1A1A1A">They called it fluffy.</text>
+  <text x="80" y="374" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#1A1A1A">Then they did it.</text>
+  <rect x="76" y="409" width="488" height="64" fill="#FFE600" rx="3"/>
+  <text x="80" y="452" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#1A1A1A">Now they can't</text>
+  <rect x="76" y="487" width="316" height="64" fill="#FFE600" rx="3"/>
+  <text x="80" y="530" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#1A1A1A">unsee it.</text>
+  <rect x="80" y="572" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+  <text x="80" y="606" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#7A7168" font-style="italic">Vanessa Chua · Rachael Sim · Brian Ng + others</text>
+  <text x="1000" y="1018" text-anchor="end" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+</svg>

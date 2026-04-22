@@ -1,0 +1,63 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+
+  <!-- Top label -->
+  <text x="80" y="106"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+
+  <!-- Opening quotation mark — serif "66" style -->
+  <text x="80" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+
+  <!-- LINE 1: "Storytelling suddenly" -->
+  <text x="80" y="306"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="64" font-weight="700" fill="#1A1A1A">Storytelling suddenly</text>
+
+  <!-- Yellow highlight behind LINE 2: "doesn't feel" -->
+  <rect x="76" y="322" width="476" height="74" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 2: "doesn't feel" -->
+  <text x="80" y="380"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="64" font-weight="700" fill="#1A1A1A">doesn't feel</text>
+
+  <!-- Yellow highlight behind LINE 3: "so daunting" -->
+  <rect x="76" y="400" width="436" height="74" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 3: "so daunting" -->
+  <text x="80" y="458"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="64" font-weight="700" fill="#1A1A1A">so daunting</text>
+
+  <!-- LINE 4: "anymore." -->
+  <text x="80" y="540"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="64" font-weight="700" fill="#1A1A1A">anymore.</text>
+
+  <!-- Thin rule -->
+  <rect x="80" y="578" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+
+  <!-- Attribution -->
+  <text x="80" y="614"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#7A7168" font-style="italic">Lim Zong Hui — Mar 2026 cohort</text>
+
+  <!-- Handle bottom right -->
+  <text x="1000" y="1018"
+        text-anchor="end"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+
+  <!-- Coral dot bottom left -->
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+
+</svg>

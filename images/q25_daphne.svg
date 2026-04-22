@@ -1,0 +1,17 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+  <text x="80" y="106" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+  <text x="80" y="246" font-family="'Times New Roman', Georgia, serif" font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246" font-family="'Times New Roman', Georgia, serif" font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="80" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A">It's really about</text>
+  <rect x="76" y="320" width="422" height="60" fill="#FFE600" rx="3"/>
+  <text x="80" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A">understanding</text>
+  <rect x="76" y="394" width="484" height="60" fill="#FFE600" rx="3"/>
+  <text x="80" y="434" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A">people deeply —</text>
+  <text x="80" y="508" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A">before jumping to solutions.</text>
+  <rect x="80" y="550" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+  <text x="80" y="586" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#7A7168" font-style="italic">Daphne Quek, Judiciary — Fundamentals Jul 2025</text>
+  <text x="1000" y="1018" text-anchor="end" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+</svg>

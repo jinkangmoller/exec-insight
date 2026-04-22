@@ -1,0 +1,55 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+
+  <!-- Top label -->
+  <text x="80" y="106"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+
+  <!-- Opening quotation mark — serif "66" style -->
+  <text x="80" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+
+  <!-- Yellow highlight rectangle behind LINE 1 -->
+  <rect x="76" y="270" width="628" height="80" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 1: "absorb the pain" — highlighted -->
+  <text x="80" y="332"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="700" fill="#1A1A1A">absorb the pain</text>
+
+  <!-- LINE 2 -->
+  <text x="80" y="422"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="700" fill="#1A1A1A">so users don't</text>
+
+  <!-- LINE 3 -->
+  <text x="80" y="512"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="700" fill="#1A1A1A">have to.</text>
+
+  <!-- Thin rule -->
+  <rect x="80" y="554" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+
+  <!-- Attribution -->
+  <text x="80" y="590"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#7A7168" font-style="italic">Yvonne Tan — Feb 2026 cohort</text>
+
+  <!-- Handle bottom right -->
+  <text x="1000" y="1018"
+        text-anchor="end"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+
+  <!-- Coral dot bottom left -->
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+
+</svg>
