@@ -1,0 +1,16 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+  <text x="80" y="106" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+  <text x="80" y="246" font-family="'Times New Roman', Georgia, serif" font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246" font-family="'Times New Roman', Georgia, serif" font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="80" y="296" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#1A1A1A">I still believe Human</text>
+  <text x="80" y="372" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#1A1A1A">Centred Design is</text>
+  <rect x="76" y="406" width="502" height="62" fill="#FFE600" rx="3"/>
+  <text x="80" y="448" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#1A1A1A">the way forward</text>
+  <text x="80" y="524" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#1A1A1A">in the world of AI.</text>
+  <rect x="80" y="566" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+  <text x="80" y="602" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#7A7168" font-style="italic">Eric Han, NUHS Corp — Facilitation Dec 2025</text>
+  <text x="1000" y="1018" text-anchor="end" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+</svg>

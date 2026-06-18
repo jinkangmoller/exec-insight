@@ -1,0 +1,63 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+
+  <!-- Top label -->
+  <text x="80" y="106"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+
+  <!-- Opening quotation mark — serif "66" style -->
+  <text x="80" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+
+  <!-- LINE 1 -->
+  <text x="80" y="336"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="700" fill="#1A1A1A">Now I reimagine hustling for</text>
+
+  <!-- Yellow highlight behind LINE 2: "cold, hard KPIs" -->
+  <rect x="76" y="359" width="446" height="62" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 2: "cold, hard KPIs" — highlighted -->
+  <text x="80" y="402"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="700" fill="#1A1A1A">cold, hard KPIs</text>
+
+  <!-- LINE 3 -->
+  <text x="80" y="468"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="700" fill="#1A1A1A">into a creative process that</text>
+
+  <!-- Yellow highlight behind LINE 4: "evokes our whole being." -->
+  <rect x="76" y="491" width="664" height="62" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 4: "evokes our whole being." — highlighted -->
+  <text x="80" y="534"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="700" fill="#1A1A1A">evokes our whole being.</text>
+
+  <!-- Thin rule -->
+  <rect x="80" y="578" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+
+  <!-- Attribution -->
+  <text x="80" y="614"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#7A7168" font-style="italic">Ng Miao Yu — May 2026 cohort</text>
+
+  <!-- Handle bottom right -->
+  <text x="1000" y="1018"
+        text-anchor="end"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+
+  <!-- Coral dot bottom left -->
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+  <text x="80" y="106" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">CONTENT ANGLE</text>
+  <rect x="80" y="114" width="138" height="2.5" fill="#E8453C"/>
+  <rect x="80" y="168" width="40" height="4" fill="#E8453C" rx="2"/>
+  <text x="80" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" opacity="0.38" letter-spacing="2">02 — EMPATHY</text>
+  <text x="80" y="266" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1A1A1A">You've been running</text>
+  <rect x="76" y="295" width="632" height="54" fill="#FFE600" rx="3"/>
+  <text x="80" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1A1A1A">user interviews wrong.</text>
+  <text x="80" y="394" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1A1A1A">Not because of your questions.</text>
+  <text x="80" y="458" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1A1A1A">Because of what</text>
+  <text x="80" y="522" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1A1A1A">you think you're looking for.</text>
+  <text x="1000" y="1018" text-anchor="end" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+</svg>

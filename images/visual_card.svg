@@ -1,0 +1,81 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#F5F0E8"/>
+
+  <!-- Top label -->
+  <text x="80" y="106"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#E8453C" letter-spacing="2">MY EXEC STUDENTS' INSIGHT</text>
+  <rect x="80" y="114" width="218" height="2.5" fill="#E8453C"/>
+
+  <!-- Opening quotation mark — serif "66" style -->
+  <text x="80" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+  <text x="118" y="246"
+        font-family="'Times New Roman', Georgia, serif"
+        font-size="95" font-weight="700" fill="#C0BAB0">&#x2018;</text>
+
+  <!-- LINE 1: "DT will have me work" -->
+  <text x="80" y="342"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="66" font-weight="700" fill="#1A1A1A">DT will have me work</text>
+
+  <!-- Yellow highlight rectangle behind LINE 2 -->
+  <rect x="76" y="360" width="490" height="76" fill="#FFE600" rx="3"/>
+
+  <!-- LINE 2: "in the reverse" — on top of yellow -->
+  <text x="80" y="420"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="66" font-weight="700" fill="#1A1A1A">in the reverse</text>
+
+  <!-- LINE 3: "from now on." -->
+  <text x="80" y="506"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="66" font-weight="700" fill="#1A1A1A">from now on.</text>
+
+  <!-- Thin rule -->
+  <rect x="80" y="546" width="72" height="1.5" fill="#1A1A1A" opacity="0.25"/>
+
+  <!-- Attribution -->
+  <text x="80" y="582"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#7A7168" font-style="italic">— a consultant, Feb 2026 cohort</text>
+
+  <!-- ARROWS — hand-drawn style using cubic bezier paths -->
+
+  <!-- Arrow 1: right-pointing (the usual way) — muted -->
+  <path d="M 80 668 C 130 663, 220 670, 310 665 C 345 663, 368 667, 388 666"
+        stroke="#C4BAA8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Arrowhead right -->
+  <path d="M 374 657 L 393 666 L 374 675"
+        stroke="#C4BAA8" stroke-width="2.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Label -->
+  <text x="80" y="656"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="16" fill="#C4BAA8" letter-spacing="1.5">THE USUAL WAY</text>
+
+  <!-- Arrow 2: left-pointing (the reverse) — strong, coral accent label -->
+  <path d="M 80 730 C 140 726, 240 733, 340 728 C 390 726, 435 730, 462 728"
+        stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Arrowhead left -->
+  <path d="M 94 720 L 74 730 L 94 740"
+        stroke="#1A1A1A" stroke-width="3" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Label -->
+  <text x="80" y="762"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="18" font-weight="700" fill="#E8453C" letter-spacing="2">THE REVERSE</text>
+
+  <!-- Handle bottom right -->
+  <text x="1000" y="1018"
+        text-anchor="end"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="18" fill="#1A1A1A" opacity="0.5" letter-spacing="1">@JINKANGMOLLER</text>
+
+  <!-- Small coral dot bottom left -->
+  <circle cx="80" cy="1012" r="5.5" fill="#E8453C" opacity="0.85"/>
+
+</svg>
