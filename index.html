@@ -849,10 +849,10 @@
       <div class="header-meta">
         <div class="harvest-badge">
           <span class="dot"></span>
-          CCO runs · 2026-03-28, 2026-03-29, 2026-06-03, 2026-06-29 &amp; 2026-07-11
+          CCO runs · 2026-03-28, 2026-03-29, 2026-06-03, 2026-06-29, 2026-07-11 &amp; 2026-07-14
         </div>
         <div class="stats-row">
-          <div class="stat-pill" id="stat-quotes"><strong>70</strong> student quotes</div>
+          <div class="stat-pill" id="stat-quotes"><strong>71</strong> student quotes</div>
           <div class="stat-pill"><strong>5</strong> key insights</div>
           <div class="stat-pill"><strong>4</strong> burning questions</div>
           <div class="stat-pill"><strong>6</strong> content angles</div>
@@ -1446,7 +1446,7 @@
     <div class="section-block" id="block-jul-2026-fund">
       <div class="section-header">
         <h2 class="section-title"><span class="section-icon">&#x201C;</span> <span>My exec student says</span> &mdash; Jul 2026 &middot; Fundamentals</h2>
-        <span class="section-meta">20 cards &middot; CCO 2026-07-11 &middot; Fundamentals &middot; MINDEF/SAF cohort</span>
+        <span class="section-meta">21 cards &middot; CCO 2026-07-11 &amp; 07-14 &middot; Fundamentals &middot; MINDEF/SAF cohort</span>
       </div>
       <div class="grid">
 
@@ -2023,6 +2023,35 @@
               <span class="tag tag-theme">Co-Creation</span>
             </div>
             <p class="insight">Reframes change management from top-down process edits to influencing individuals, "including oneself," and turning colleagues into "ambassadors of change" through co-creation. His burning questions (moving "the middle," simplifying legalese in regulated settings) are worth a direct reply.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="jul-2026-fund"
+          data-muscles="empathy synthesis"
+          data-quote="We often talk about DT conceptually but the process (especially the stage of Empathy) needs time for us to yield the most valuable data."
+          data-keyquote="We talk about DT conceptually, but empathy *needs time to yield the most valuable data.*">
+          <div class="card-quote-visual">
+            <span class="cql-label">My exec students' insight</span>
+            <p class="cqv-text">We talk about DT conceptually, but empathy <mark>needs time to yield the most valuable data.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Timothy Wong Pixian</span>
+              <span class="person-cohort">DT Fundamentals &middot; Jul 2026</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Depth over Speed</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Empathy</span>
+            </div>
+            <p class="insight">Had read about DT before but never lived it. His takeaway is the one that separates practitioners from talkers: empathy is not a checkbox, it needs time. He calls surveys and a few quick asks "a quick and dirty way, not sufficient to determine real problems." Cohort assumed Jul Fundamentals from the late submission; confirm if he belongs elsewhere.</p>
           </div>
         </article>
 
@@ -4010,7 +4039,7 @@ ${body.join('\n')}
       block.style.display = count > 0 ? '' : 'none';
       meta.textContent = `${count} card${count !== 1 ? 's' : ''}`;
       // Update header stat pill to reflect manual cards added to quote count
-      const baseQuotes = 70;
+      const baseQuotes = 71;
       const statEl = document.getElementById('stat-quotes');
       if (statEl) statEl.innerHTML = `<strong>${baseQuotes + count}</strong> student quotes`;
       applyFilters();
