@@ -353,6 +353,9 @@
     .insight      { font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #FFE600; }
     .insight-note { font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #D4903A; }
     .question-note{ font-family: Georgia, serif; font-size: 12.5px; font-style: italic; color: #5A5248; line-height: 1.68; padding-left: 12px; border-left: 3px solid #E8453C; }
+    .jin-answer{ margin-top: 12px; padding: 10px 12px; background: #F4F1EC; border-radius: 6px; }
+    .jin-answer-label{ display:block; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #8B2020; margin-bottom: 4px; }
+    .jin-answer p{ font-size: 12.5px; line-height: 1.6; color: #2A2622; margin: 0; }
 
     /* ── EMPTY STATE ── */
 
@@ -841,10 +844,10 @@
       <div class="header-meta">
         <div class="harvest-badge">
           <span class="dot"></span>
-          CCO runs · 2026-03-28, 2026-03-29, 2026-06-03, 2026-06-29, 2026-07-11, 2026-07-14, 2026-08-11, 2026-08-13, 2026-09-11, 2026-09-12 &amp; 2026-09-14
+          CCO runs · 2026-03-28, 2026-03-29, 2026-06-03, 2026-06-29, 2026-07-11, 2026-07-14, 2026-08-11, 2026-08-13, 2026-09-11, 2026-09-12, 2026-09-14 &amp; 2026-10-25
         </div>
         <div class="stats-row">
-          <div class="stat-pill" id="stat-quotes"><strong>156</strong> student quotes</div>
+          <div class="stat-pill" id="stat-quotes"><strong>184</strong> student quotes</div>
           <div class="stat-pill"><strong>11</strong> key insights</div>
           <div class="stat-pill"><strong>13</strong> burning questions</div>
         </div>
@@ -869,6 +872,7 @@
       <div class="filter-row">
         <span class="filter-label">Cohort</span>
         <div class="filter-pills">
+          <button class="filter-pill" data-filter-group="cohort" data-filter-value="oct-2026-fund">Oct 2026 · Fund.</button>
           <button class="filter-pill" data-filter-group="cohort" data-filter-value="sep-2026-fund">Sep 2026 · Fund.</button>
           <button class="filter-pill" data-filter-group="cohort" data-filter-value="jul-2026-adv">Jul 2026 · Adv.</button>
           <button class="filter-pill" data-filter-group="cohort" data-filter-value="jul-2026-fund">Jul 2026 · Fund.</button>
@@ -1149,9 +1153,70 @@
     <div class="section-block" id="block-questions">
       <div class="section-header">
         <h2 class="section-title"><span class="section-icon">?</span> <span>Burning Questions</span> — raised in student reflections</h2>
-        <span class="section-meta">14 cards · Sep 2026 &amp; Nov 2025</span>
+        <span class="section-meta">16 cards · Oct 2026, Sep 2026 &amp; Nov 2025</span>
       </div>
       <div class="grid">
+
+        <article class="card"
+          data-type="question"
+          data-cohort="oct-2026-fund"
+          data-muscles="facilitation experiment"
+          data-quote="How can we embed design thinking into an organisation&#x27;s DNA, particularly in environments where people are accustomed to &#x27;solving problems they assume they know&#x27; and &#x27;prioritising immediate results&#x27;?"
+          data-keyquote="How can we embed design thinking into an organisation&#x27;s DNA, where people are accustomed to *&#x27;solving problems they assume they know&#x27;*?"
+          data-industry="ENGIE South East Asia">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' burning question</span>
+            <p class="cqv-text">How can we embed design thinking into an organisation&#x27;s DNA, where people are accustomed to <mark>&#x27;solving problems they assume they know&#x27;</mark>?</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Zann Chua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; ENGIE South East Asia</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-facilitation">Facilitation</span>
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Culture</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Scaling DT</span>
+            </div>
+            <p class="question-note">The scaling question, asked by someone who has already signed up for the Facilitation module. She names the two habits that resist the method: assumed problems and the pull of immediate results.</p>
+            <div class="jin-answer"><span class="jin-answer-label">Jin's answer</span><p>Embedding design thinking into an org&#x27;s DNA takes top-down strategy, bottom-up movement and most importantly passionate individuals like you! I&#x27;ve experienced both top-down and bottom-up approaches; the key here is to show the &#x27;real impact&#x27; (no matter how small that is). I&#x27;ve learnt how to start where the suction is, how to make &#x27;design&#x27; friends in the company, and create stories to tell. We will cover more about this in the further modules. You may find Part 3 of The Simplicity Playbook useful, as I share examples of how to scale such culture.</p></div>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="question"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Separately, it sounds like you&#x27;ve been practicing Design Thinking for a long time. Does it ever get tiring? Constantly thinking so intentionally and always having to read between the lines of things."
+          data-keyquote="Does it ever get tiring? *Constantly thinking so intentionally* and always having to read between the lines of things."
+          data-industry="New Creation Church">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' burning question</span>
+            <p class="cqv-text">Does it ever get tiring? <mark>Constantly thinking so intentionally</mark> and always having to read between the lines of things.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-question">? Burning Question</span>
+            <div class="person-info">
+              <span class="person-name">Charmaine Teo</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; New Creation Church</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Practice</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Energy</span>
+            </div>
+            <p class="question-note">A question about the practitioner, not the method. Charmaine had just started noticing tacit needs at home and at work, and wondered what it costs to keep that attention switched on for years.</p>
+            <div class="jin-answer"><span class="jin-answer-label">Jin's answer</span><p>Practising design thinking, as you said, is an intentional practice and requires a lot of energy to drive that thinking through in an organisation. But it also strengthens my way of thinking and inspires the way I think about other aspects of my life (not only business). I feel like I&#x27;m always learning.</p></div>
+          </div>
+        </article>
 
         <article class="card"
           data-type="question"
@@ -1542,6 +1607,863 @@
 
     <!-- ═══ STUDENT QUOTES — May 2026 ═══ -->
     <!-- ═══ JUL 2026 ADVANCED APPLICATIONS ═══ -->
+    <!-- ═══ OCT 2026 FUNDAMENTALS ═══ -->
+    <div class="section-block" id="block-oct-2026-fund">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-icon">&#x201C;</span> <span>My exec student says</span> &mdash; Oct 2026 &middot; Fundamentals</h2>
+        <span class="section-meta">28 cards &middot; 12 students &middot; CCO 2026-10-25 &middot; Fundamentals &middot; AIC, ITE, NHG Population Health, SingHealth, StarHub &amp; private sector</span>
+      </div>
+      <div class="grid">
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Design thinking has taught me to approach problems with greater curiosity and empathy."
+          data-keyquote="Design thinking has taught me to approach problems with *greater curiosity and empathy.*"
+          data-did=""
+          data-industry="Agency for Integrated Care">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Design thinking has taught me to approach problems with <mark>greater curiosity and empathy.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Enid Liang</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Agency for Integrated Care</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Mindset Shift</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Curiosity</span>
+            </div>
+            <p class="insight">Enid is an administration manager at the Agency for Integrated Care. Her line names the two dispositions the whole course is built on, curiosity and empathy, and frames them as a way of approaching problems rather than a step in a process. It is the cleanest summary of the Empathy muscle this cohort produced.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="divergent"
+          data-quote="Instead of pushing ourselves to think outside the box, “How might we” statements provide multiple boxes for us to think within."
+          data-keyquote="Instead of pushing ourselves to think outside the box, &quot;How might we&quot; statements provide *multiple boxes for us to think within.*"
+          data-did=""
+          data-industry="New Creation Church">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Instead of pushing ourselves to think outside the box, &quot;How might we&quot; statements provide <mark>multiple boxes for us to think within.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Charmaine Teo</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; New Creation Church</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">How Might We</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Reframe</span>
+            </div>
+            <p class="insight">Charmaine is a graphic designer, so &#x27;think outside the box&#x27; is the brief she hears most. She turned the cliché around: the HMW statement does not remove the box, it hands you several to work inside. A self-coined reframe of constraint as a creative tool, and it matches Xiaoxia&#x27;s &#x27;from the box&#x27; line from the same room.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="But after learning about applying Empathy in the process, I began to see a shift in the end goal … not just about having answers or solutions, and more about learning more about the customer."
+          data-keyquote="I began to see a shift in the end goal: *not just about having answers or solutions*, and more about learning more about the customer."
+          data-did=""
+          data-industry="New Creation Church">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I began to see a shift in the end goal: <mark>not just about having answers or solutions</mark>, and more about learning more about the customer.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Charmaine Teo</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; New Creation Church</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Mindset Shift</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Purpose</span>
+            </div>
+            <p class="insight">She came in thinking design thinking was about producing creative solutions. By day three the goal itself had moved, from answers to understanding. For a designer whose job is usually judged on the output, that is a real shift in where the value sits.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="In my own life I’ve also found myself more sensitive to seeing tacit and latent needs in my colleagues and family through our conversations"
+          data-keyquote="In my own life I&#x27;ve also found myself *more sensitive to seeing tacit and latent needs* in my colleagues and family."
+          data-did=""
+          data-industry="New Creation Church">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">In my own life I&#x27;ve also found myself <mark>more sensitive to seeing tacit and latent needs</mark> in my colleagues and family.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Charmaine Teo</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; New Creation Church</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Life Application</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Tacit Needs</span>
+            </div>
+            <p class="insight">The knowledge iceberg left the classroom within days. She is already noticing tacit and latent needs at home and at work, which is the Empathy muscle working outside any project. Evidence the method transfers to ordinary conversations, not only interviews.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy synthesis"
+          data-quote="Instead of assuming that students are disengaged because they lack motivation, I will seek to understand their challenges, emotions and underlying needs at different stages of their learning journey."
+          data-keyquote="Instead of assuming that students are disengaged because they lack motivation, I will seek to understand *their challenges, emotions and underlying needs.*"
+          data-did="on her students&#x27; learning journeys"
+          data-industry="Institute of Technical Education">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Instead of assuming that students are disengaged because they lack motivation, I will seek to understand <mark>their challenges, emotions and underlying needs.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Nur Afni Zakaria</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Institute of Technical Education</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Education</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Assumptions</span>
+            </div>
+            <p class="insight">Afni teaches at ITE. She named the default diagnosis every educator reaches for, &#x27;they lack motivation&#x27;, and replaced it with a journey map of the student&#x27;s experience. A concrete reframe from blaming the user to understanding them.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="divergent"
+          data-quote="Divergent and convergent thinking: explore widely before narrowing down. I need to be able to have the freedom to explore and the ability to focus"
+          data-keyquote="I need to be able to have *the freedom to explore and the ability to focus.*"
+          data-did="on her students&#x27; learning journeys"
+          data-industry="Institute of Technical Education">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I need to be able to have <mark>the freedom to explore and the ability to focus.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Nur Afni Zakaria</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Institute of Technical Education</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Diverge &amp; Converge</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Balance</span>
+            </div>
+            <p class="insight">Her definition of the diamond in her own words: a freedom and an ability, held together. She frames it as a personal need, not a process rule, which is what turns a model into a muscle.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy facilitation"
+          data-quote="The solution does not have to come from me alone. Initially, this felt intimidating, as it meant recognising the limits of my own understanding. However, it was also reassuring."
+          data-keyquote="The solution does not have to come from me alone. Initially, this felt intimidating... *However, it was also reassuring.*"
+          data-did="on stakeholder feedback from staff, students and parents"
+          data-industry="Islamic Learning Hub And Management">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">The solution does not have to come from me alone. Initially, this felt intimidating... <mark>However, it was also reassuring.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Halimah Binti Abdul Aziz</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Islamic Learning Hub And Management</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-facilitation">Facilitation</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Collective Wisdom</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Letting Go</span>
+            </div>
+            <p class="insight">Halimah is an administration manager in education who describes herself as naturally analytical. She names both feelings honestly: the threat of admitting the limits of her own understanding, and the relief that follows. The emotional arc of a leader learning to share the problem.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="facilitation"
+          data-quote="I do not have to rely solely on my own capacity to solve a problem. Instead, I can create the conditions for a more meaningful solution to emerge through collective understanding."
+          data-keyquote="I do not have to rely solely on my own capacity to solve a problem. Instead, I can *create the conditions for a more meaningful solution to emerge.*"
+          data-did="on stakeholder feedback from staff, students and parents"
+          data-industry="Islamic Learning Hub And Management">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I do not have to rely solely on my own capacity to solve a problem. Instead, I can <mark>create the conditions for a more meaningful solution to emerge.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Halimah Binti Abdul Aziz</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Islamic Learning Hub And Management</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-facilitation">Facilitation</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Leadership</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Collective Wisdom</span>
+            </div>
+            <p class="insight">The second half of her shift: from solver to host. &#x27;Create the conditions&#x27; is facilitation language she arrived at on her own after a Fundamentals run, a natural bridge to the Facilitation module.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="divergent"
+          data-quote="I realise that I tend to move into convergent thinking too quickly, narrowing down the options before exploring the problem and possibilities sufficiently. … This creates a cycle of premature convergence followed by further exploration, rather than a more deliberate process of diverging sufficiently before converging."
+          data-keyquote="I tend to move into convergent thinking too quickly. This creates *a cycle of premature convergence* followed by further exploration."
+          data-did="on stakeholder feedback from staff, students and parents"
+          data-industry="Islamic Learning Hub And Management">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I tend to move into convergent thinking too quickly. This creates <mark>a cycle of premature convergence</mark> followed by further exploration.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Halimah Binti Abdul Aziz</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Islamic Learning Hub And Management</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Self-Awareness</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Premature Convergence</span>
+            </div>
+            <p class="insight">The sharpest piece of self-diagnosis in the cohort. She used the diamond to explain why she keeps re-researching decisions: she converges too early, then has to diverge again. The model became a mirror for her own decision pattern.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy synthesis"
+          data-quote="Ultimately, I hope to use Design Thinking to move beyond measuring satisfaction towards understanding experiences, uncovering underlying needs and identifying meaningful opportunities for improvement."
+          data-keyquote="I hope to use Design Thinking to *move beyond measuring satisfaction towards understanding experiences.*"
+          data-did="on stakeholder feedback from staff, students and parents"
+          data-industry="Islamic Learning Hub And Management">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I hope to use Design Thinking to <mark>move beyond measuring satisfaction towards understanding experiences.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Halimah Binti Abdul Aziz</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Islamic Learning Hub And Management</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Surveys</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Experience</span>
+            </div>
+            <p class="insight">Her organisation runs large online surveys that report high satisfaction while complaints still arrive. Rather than treat that as a contradiction to explain away, she wants interviews to find the experience behind the score. A clean statement of why qualitative research earns its time.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="One key takeaway is that we often move too quickly into solution mode, especially when we have years of professional experience. Design thinking reminds me to slow down, listen more intentionally and challenge what I think I already know."
+          data-keyquote="Design thinking reminds me to slow down, listen more intentionally and *challenge what I think I already know.*"
+          data-did=""
+          data-industry="ENGIE South East Asia">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Design thinking reminds me to slow down, listen more intentionally and <mark>challenge what I think I already know.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Zann Chua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; ENGIE South East Asia</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Expertise Trap</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Humility</span>
+            </div>
+            <p class="insight">Zann points at experience itself as the risk: the more years you have, the faster you jump to solutions. She has already signed up for the Facilitation module and asked about Advanced, so the shift landed hard enough to keep going.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Listen - be more intentional in my approach, remain curious and continue to ask questions to understand rather than listen to respond"
+          data-keyquote="Remain curious and continue to ask questions to *understand rather than listen to respond.*"
+          data-did=""
+          data-industry="ENGIE South East Asia">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Remain curious and continue to ask questions to <mark>understand rather than listen to respond.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Zann Chua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; ENGIE South East Asia</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Listening</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Curiosity</span>
+            </div>
+            <p class="insight">A tidy, self-phrased contrast between two kinds of listening. It is the behaviour change she commits to first, before any tool, which says the Empathy muscle is what she took home.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="I now understand that the most critical step is often the one we skip most readily: truly understanding the people affected by the problem."
+          data-keyquote="The most critical step is often *the one we skip most readily*: truly understanding the people affected by the problem."
+          data-did="at NHG Population Health"
+          data-industry="NHG Population Health">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">The most critical step is often <mark>the one we skip most readily</mark>: truly understanding the people affected by the problem.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Edwin Phua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; NHG Population Health</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Problem Framing</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Mindset Shift</span>
+            </div>
+            <p class="insight">Edwin is Deputy Director of Planning at NHG Population Health. He used to treat problem-solving as linear and assumed he had enough context to define problems alone. His line names the paradox neatly: the most important step is the most skipped one.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="experiment"
+          data-quote="I have also become more comfortable with ambiguity and iteration - the idea that it is okay, even necessary, to be wrong early so you can get it right eventually."
+          data-keyquote="It is okay, even necessary, to *be wrong early so you can get it right eventually.*"
+          data-did="at NHG Population Health"
+          data-industry="NHG Population Health">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">It is okay, even necessary, to <mark>be wrong early so you can get it right eventually.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Edwin Phua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; NHG Population Health</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Iteration</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Ambiguity</span>
+            </div>
+            <p class="insight">A planner saying it is necessary to be wrong early is a real shift in a healthcare setting that rewards getting it right first time. He plans to put rough drafts in front of colleagues sooner, which is the Experiment muscle in practice.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="experiment"
+          data-quote="Testing is not about proving your idea works; it is about learning what does and does not work so you can iterate and improve."
+          data-keyquote="Testing is *not about proving your idea works*; it is about learning what does and does not work."
+          data-did="at NHG Population Health"
+          data-industry="NHG Population Health">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Testing is <mark>not about proving your idea works</mark>; it is about learning what does and does not work.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Edwin Phua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; NHG Population Health</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Testing</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Learning</span>
+            </div>
+            <p class="insight">His definition of testing reframes it from validation to learning. Short and quotable, and it pairs with his &#x27;wrong early&#x27; line as one consistent stance on iteration.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Design thinking is a through process that goes beyond the superficial in order to discover the intrinsic motivations for a customer to say YES to us."
+          data-keyquote="Design thinking goes beyond the superficial in order to discover *the intrinsic motivations for a customer to say YES to us.*"
+          data-did=""
+          data-industry="Educator">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Design thinking goes beyond the superficial in order to discover <mark>the intrinsic motivations for a customer to say YES to us.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Tan Yankun Benjamin</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Educator</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Motivation</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Jobs to Be Done</span>
+            </div>
+            <p class="insight">Benjamin describes himself as a teacher and new to design thinking. His summary lands on intrinsic motivation as the target of the whole process, and he wants to find the EPIC moments for the people he serves. His burning question is how to simplify the process for newcomers.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Gather people stories, through indivdual interviews, to truly empathise with them rather than just trying to catch what you want to hear and direct them where you want them to go."
+          data-keyquote="Truly empathise with them rather than *just trying to catch what you want to hear* and direct them where you want them to go."
+          data-did=""
+          data-industry="Educator">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Truly empathise with them rather than <mark>just trying to catch what you want to hear</mark> and direct them where you want them to go.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Tan Yankun Benjamin</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Educator</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Interviewing</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Listening</span>
+            </div>
+            <p class="insight">He names the two classic interview traps in one line: listening only for confirmation, and leading the person. A practical reminder of what a good interview is not.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="synthesis experiment"
+          data-quote="Living in Singapore, we often want to be 100% accurate before we proceed but DT has taught me that sometimes, we need to act on our instincts. If a connection/hunch is good enough based on the data, we should be confident enough to proceed!"
+          data-keyquote="We often want to be 100% accurate before we proceed, but *if a hunch is good enough based on the data*, we should be confident enough to proceed!"
+          data-did="in SoDrama! Entertainment&#x27;s new Transformation team"
+          data-industry="SoDrama! Entertainment">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">We often want to be 100% accurate before we proceed, but <mark>if a hunch is good enough based on the data</mark>, we should be confident enough to proceed!</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Joey Chua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; SoDrama! Entertainment</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Good Enough</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Courage</span>
+            </div>
+            <p class="insight">Joey was just placed in her organisation&#x27;s newly formed Transformation team with no transformation background. She names a cultural habit, waiting for 100% accuracy, and takes permission from synthesis to act on a good enough connection. Inference as courage, not guesswork.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="This course reminded me that a person is multi-faceted and we cannot make judgements based off a single action. Their behaviour may be driven by something deeper that we do not know of."
+          data-keyquote="A person is multi-faceted and *we cannot make judgements based off a single action.*"
+          data-did="in SoDrama! Entertainment&#x27;s new Transformation team"
+          data-industry="SoDrama! Entertainment">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">A person is multi-faceted and <mark>we cannot make judgements based off a single action.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Joey Chua</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; SoDrama! Entertainment</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Whole Person</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Judgement</span>
+            </div>
+            <p class="insight">She calls empathy &#x27;easier said than done&#x27; and then states why: a single action never tells the whole story. Useful framing for someone about to interview 50 to 100 employees for a transformation programme.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="divergent facilitation"
+          data-quote="Ideation: Coming up with different ideas before choosing a solution. I learnt that ideas can improve when we build on one another’s views."
+          data-keyquote="I learnt that *ideas can improve when we build on one another&#x27;s views.*"
+          data-did=""
+          data-industry="NHG Population Health">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I learnt that <mark>ideas can improve when we build on one another&#x27;s views.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Jeannette Tan</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; NHG Population Health</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag tag-facilitation">Facilitation</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Co-creation</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Ideation</span>
+            </div>
+            <p class="insight">Jeannette is a health services manager at NHG Population Health, in the same class as her colleague Edwin. Her takeaway on ideation is about building on each other, not individual brilliance, which is the collaborative side of the Divergent muscle.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="experiment"
+          data-quote="Making ideas workable: A good idea also needs to be practical. We need to consider what is needed to make it work in real life."
+          data-keyquote="A good idea also needs to be practical. We need to consider *what is needed to make it work in real life.*"
+          data-did=""
+          data-industry="NHG Population Health">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">A good idea also needs to be practical. We need to consider <mark>what is needed to make it work in real life.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Jeannette Tan</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; NHG Population Health</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Feasibility</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Real Life</span>
+            </div>
+            <p class="insight">She added a sixth concept of her own to the list: making ideas workable. A grounded healthcare voice reminding that an idea only counts once it can survive real operations.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Before attending the course, I thought Design Thinking was mainly about creativity and coming up with new ideas. I now understand that it is more about understanding people&#x27;s needs, identifying the right problem and exploring different ways to solve it."
+          data-keyquote="I thought Design Thinking was mainly about creativity. I now understand that it is more about *understanding people&#x27;s needs, identifying the right problem.*"
+          data-did=""
+          data-industry="Far East Management">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I thought Design Thinking was mainly about creativity. I now understand that it is more about <mark>understanding people&#x27;s needs, identifying the right problem.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Donna Suretno</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; Far East Management</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Mindset Shift</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Right Problem</span>
+            </div>
+            <p class="insight">Donna works in corporate communications at Far East Management and was new to the concept; she says some parts were challenging. Her shift from &#x27;creativity&#x27; to &#x27;the right problem&#x27; is the most common one in Fundamentals, and the repetition across students is itself the signal.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="divergent"
+          data-quote="The other thing I would like to apply at work is the matrix window that helps us to find opportunities. Space, roles, processes and tools are structured approach in developing innovations. It’s innovations from the box, not out of the box."
+          data-keyquote="Space, roles, processes and tools are a structured approach in developing innovations. *It&#x27;s innovations from the box, not out of the box.*"
+          data-did="on team brainstorming at StarHub"
+          data-industry="StarHub">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Space, roles, processes and tools are a structured approach in developing innovations. <mark>It&#x27;s innovations from the box, not out of the box.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Chen Xiaoxia</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; StarHub</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-divergent">Divergent</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Structure</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Innovation</span>
+            </div>
+            <p class="insight">Xiaoxia is a sales and marketing manager at StarHub. Her team brainstorms often but struggles to turn ideas into insight, and she found structure, not freedom, was the missing piece. &#x27;From the box, not out of the box&#x27; is self-coined, and it echoes Charmaine&#x27;s &#x27;multiple boxes&#x27; line from the same cohort.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="aesthetic experiment"
+          data-quote="Prototyping with visuals: I enjoyed the process. Visuals truly tell a thousand stories, delivers the message much better than a PowerPoint presentation."
+          data-keyquote="Visuals truly tell a thousand stories, and *deliver the message much better than a PowerPoint presentation.*"
+          data-did="on team brainstorming at StarHub"
+          data-industry="StarHub">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">Visuals truly tell a thousand stories, and <mark>deliver the message much better than a PowerPoint presentation.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Chen Xiaoxia</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; StarHub</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-aesthetic">Aesthetic</span>
+              <span class="tag tag-experiment">Experiment</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Visual Prototyping</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Storytelling</span>
+            </div>
+            <p class="insight">From someone whose working life runs on slide decks, a clear vote for storyboards and role play. She also noticed the prototype got &#x27;more meat&#x27; as different perspectives were added, the Aesthetic muscle doing collaborative work.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="synthesis"
+          data-quote="…BUT… is a strong template as it forces the thinker to draw out the contradictions that’s is not easily observed in plain sight, though I also think sometime we might over analyse a customer’s action and make assumptions when drawing insights."
+          data-keyquote="I also think sometimes we might *over analyse a customer&#x27;s action* and make assumptions when drawing insights."
+          data-did="on team brainstorming at StarHub"
+          data-industry="StarHub">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I also think sometimes we might <mark>over analyse a customer&#x27;s action</mark> and make assumptions when drawing insights.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Chen Xiaoxia</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; StarHub</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Critical Thinking</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Insight</span>
+            </div>
+            <p class="insight">The only student in the cohort to push back on a tool. She values the contradiction template but warns it can tempt us to read too much into a single behaviour. Healthy scepticism about inference, a mature take on the Synthesis muscle.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="synthesis"
+          data-quote="This course has given me the structured knowledge of what design thinking is actually about, and realise that I have been practicing it, not all of it, but some part of it during my work."
+          data-keyquote="I realise that *I have been practicing it*, not all of it, but some part of it during my work."
+          data-did="on team brainstorming at StarHub"
+          data-industry="StarHub">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">I realise that <mark>I have been practicing it</mark>, not all of it, but some part of it during my work.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Chen Xiaoxia</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; StarHub</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Recognition</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Confidence</span>
+            </div>
+            <p class="insight">She had heard the term often but never attended a workshop. The course gave her a name for things she was already doing, which tends to build confidence faster than learning from scratch.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy synthesis"
+          data-quote="Personal: To gain better insights of my current year personal high, neutral, low points."
+          data-keyquote="To gain better insights of *my current year personal high, neutral, low points.*"
+          data-did="mapping her own year&#x27;s highs and lows"
+          data-industry="SingHealth">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">To gain better insights of <mark>my current year personal high, neutral, low points.</mark></p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Jocelyn Chong</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; SingHealth</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag tag-synthesis">Synthesis</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Personal Journey</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Self-Reflection</span>
+            </div>
+            <p class="insight">Jocelyn works at SingHealth. Alongside her work plan, she is turning the customer journey map on herself to read the highs, lows and neutral points of her own year. The tool becoming a personal reflection practice.</p>
+          </div>
+        </article>
+
+        <article class="card"
+          data-type="quote"
+          data-cohort="oct-2026-fund"
+          data-muscles="empathy"
+          data-quote="Work: To deepen the empathize scope (hypothesis, interviews, personas, customer journey mapping, systhesis and insights) before jumping into the hmw opportunities."
+          data-keyquote="To *deepen the empathize scope* before jumping into the HMW opportunities."
+          data-did=""
+          data-industry="SingHealth">
+          <div class="card-quote-visual">
+            <span class="cql-label">Exec students' insight</span>
+            <p class="cqv-text">To <mark>deepen the empathize scope</mark> before jumping into the HMW opportunities.</p>
+            <div class="cql-footer"><span class="cql-dot"></span><span class="cql-handle">@JINKANGMOLLER</span></div>
+          </div>
+          <div class="card-meta">
+            <span class="card-type type-quote">&#x201C; Student Quote</span>
+            <div class="person-info">
+              <span class="person-name">Jocelyn Chong</span>
+              <span class="person-cohort">DT Fundamentals &middot; Oct 2026 &middot; SingHealth</span>
+            </div>
+            <div class="tags">
+              <span class="tag tag-empathy">Empathy</span>
+              <span class="tag-divider"></span>
+              <span class="tag tag-theme">Depth Before Ideas</span>
+              <span class="tag tag-theme">&middot;</span>
+              <span class="tag tag-theme">Process</span>
+            </div>
+            <p class="insight">She already facilitates the five phases and came for a wider toolkit. Her commitment is to stay longer in the empathy work before moving to opportunities, the same &#x27;slow down before solving&#x27; pattern seen across this cohort.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
     <div class="section-block" id="block-sep-2026-fund">
       <div class="section-header">
         <h2 class="section-title"><span class="section-icon">&#x201C;</span> <span>My exec student says</span> &mdash; Sep 2026 &middot; Fundamentals</h2>
@@ -6864,7 +7786,7 @@ ${body.join('\n')}
       block.style.display = count > 0 ? '' : 'none';
       meta.textContent = `${count} card${count !== 1 ? 's' : ''}`;
       // Update header stat pill to reflect manual cards added to quote count
-      const baseQuotes = 156;
+      const baseQuotes = 184;
       const statEl = document.getElementById('stat-quotes');
       if (statEl) statEl.innerHTML = `<strong>${baseQuotes + count}</strong> student quotes`;
       applyFilters();
@@ -6949,14 +7871,15 @@ ${body.join('\n')}
       const mayMeta = mayBlock ? mayBlock.querySelector('.section-meta') : null;
       if (mayMeta) mayMeta.textContent = '13 cards · CCO run 2026-06-03 · Fund. & Facilitation · incl. Day 4 Hat Moments';
 
-      // Pin newest cohorts to top, newest first: Sep Fund, Jul Adv, Jul Fund, Jun AI×DT, Jun Fund, then May
+      // Pin newest cohorts to top, newest first: Oct Fund, Sep Fund, Jul Adv, Jul Fund, Jun AI×DT, Jun Fund, then May
+      const octBlock  = document.getElementById('block-oct-2026-fund');
       const sepBlock  = document.getElementById('block-sep-2026-fund');
       const advBlock  = document.getElementById('block-jul-2026-adv');
       const fundBlock = document.getElementById('block-jul-2026-fund');
       const aidtBlock = document.getElementById('block-jun-2026-aidt');
       const junBlock  = document.getElementById('block-jun-2026');
       let anchor = manualBlock;
-      [sepBlock, advBlock, fundBlock, aidtBlock, junBlock, mayBlock].forEach(function(b) {
+      [octBlock, sepBlock, advBlock, fundBlock, aidtBlock, junBlock, mayBlock].forEach(function(b) {
         if (anchor && b) { anchor.after(b); anchor = b; }
       });
     })();
